@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="100dp"
+                android:layout_height="68dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:text="Search for food" />
+
+
+            <ImageButton
+                android:id="@+id/searchButton"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
+                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="#FFFEFE">
+
+            <LinearLayout
+                android:id="@+id/itemContainer"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

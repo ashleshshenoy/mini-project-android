@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    tools:context=".calorie">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFEFE"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/calorieTile"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="#FFFFFF"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="111dp"
+                    android:layout_height="116dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.157"
+                    app:srcCompat="@drawable/eat" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eat upto 1150 Calories"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.628"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.477" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="28dp"
+                    android:layout_height="27dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.945"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/analytics" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="bold"
+                    android:layout_width="149dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingStart="10dp"
+                    android:text="Breakfast  "
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    style="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"
+                    android:text="  0 of 288 cal"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/breakfastAddBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/plusicon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/breakfastContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#F4F6FE"
+                android:minHeight="150dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/breakFastHelpText"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:gravity="center"
+                    android:text="All you need is some breakfast .  🏃☀️" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="bold"
+                    android:layout_width="149dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingStart="10dp"
+                    android:text="Morning snacks  "
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    style="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"
+                    android:text="  0 of 288 cal"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/plusicon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/testContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#F4F6FE"
+                android:minHeight="150dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/morningSnackHelpText"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:gravity="center"
+                    android:text="Get Energized by grabbing a morning snack.  🥜" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="bold"
+                    android:layout_width="149dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingStart="10dp"
+                    android:text="Lunch"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    style="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"
+                    android:text="  0 of 288 cal"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/plusicon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/testContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#F4F6FE"
+                android:minHeight="150dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/lunchHelpText"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:gravity="center"
+                    android:text="Don't miss lunch 🍱 its time to get a tasty meal." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="bold"
+                    android:layout_width="149dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingStart="10dp"
+                    android:text="Evening snack"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    style="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"
+                    android:text="  0 of 288 cal"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/plusicon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/testContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#F4F6FE"
+                android:minHeight="150dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/eveningSnackHelpText"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:gravity="center"
+                    android:text="Refresh yourself with a delicious evening snack 🥑 ." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="bold"
+                    android:layout_width="149dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingStart="10dp"
+                    android:text="Dinner"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    style="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"
+                    android:text="  0 of 288 cal"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/plusicon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/testContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#F4F6FE"
+                android:minHeight="150dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/dinnerHelpText"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:gravity="center"
+                    android:text="An early dinner can help you sleep better 🍽️😴 " />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
