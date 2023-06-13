@@ -24,7 +24,7 @@
         android:layout_height="65dp"
         android:gravity="center"
         android:text="One step close to a healthy lifestyle."
-        android:textColor="#666767"
+        android:textColor="#AAAAAA"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.804" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/SplashScreenText"
         android:layout_width="212dp"
         android:layout_height="68dp"
         android:gravity="center"

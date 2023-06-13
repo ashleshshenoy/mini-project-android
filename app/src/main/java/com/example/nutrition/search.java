@@ -7,11 +7,15 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.os.Bundle;
+import android.text.Layout;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TableLayout;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -28,6 +32,7 @@ public class search extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide(); //<< this
         setContentView(R.layout.activity_search);
 
 
@@ -58,10 +63,17 @@ public class search extends AppCompatActivity {
                 JSONObject item = (JSONObject) items.get(i);
                 TextView txt = new TextView(search.this);
                 txt.setText(item.getString("name"));
-                txt.setPadding(40,40,40,40);
                 txt.setElevation(20);
+                txt.setHeight(100);
+                txt.setGravity(Gravity.CENTER_VERTICAL);
+                txt.setBackgroundColor((int)R.color.white);
+                txt.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT, TableLayout.LayoutParams.WRAP_CONTENT, 1f));
                 ImageButton addBtn = new ImageButton(search.this);
+                addBtn.setLayoutParams(new LinearLayout.LayoutParams(100, 100));
+                addBtn.setScaleType(ImageView.ScaleType.FIT_CENTER);
+                addBtn.setBackgroundColor((int)R.color.white);
                 addBtn.setImageResource(R.drawable.plusicon);
+
                 addBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -72,7 +84,9 @@ public class search extends AppCompatActivity {
                 });
                 LinearLayout ll = new LinearLayout(search.this);
                 ll.setOrientation(LinearLayout.HORIZONTAL);
+                ll.setBackgroundColor((int)R.color.purple_200);
                 ll.addView(txt);
+                ll.setPadding(10, 50, 10,50);
                 ll.addView(addBtn);
                 itemContainer.addView(ll);
             }

@@ -1,52 +1,52 @@
 {
-  "item" : [ {
 
-      "name": "Apple",
+  "Apple":{
+      "carb": 3.5,
       "protein": 0.3,
       "calorie": 52,
       "fibre": 2.4,
       "fat": 0.2,
-      "unit": "per 100g"
+      "unit": "g"
     },
-    {
-      "name": "Banana",
+    "Banana": {
+      "carb":10,
       "protein": 1.1,
       "calorie": 96,
       "fibre": 2.6,
       "fat": 0.3,
-      "unit": "per 100g"
+      "unit": "ml"
     },
-    {
-      "name": "Mango",
+    "Mango": {
+      "carb": 20,
       "protein": 0.82,
       "calorie": 60,
       "fibre": 1.6,
       "fat": 0.38,
-      "unit": "per 100g"
+      "unit": "g"
     },
-    {
-      "name": "Carrot",
+    "Carrot":{
+      "carb":2,
       "protein": 0.9,
       "calorie": 41,
       "fibre": 2.8,
       "fat": 0.2,
-      "unit": "per 100g"
+      "unit": "g"
     },
-    {
-      "name": "Tomato",
+    "Tomato":{
+      "carb": 2,
       "protein": 0.9,
       "calorie": 18,
       "fibre": 1.2,
       "fat": 0.2,
-      "unit": "per 100g"
+      "unit": "g"
     },
-    {
-      "name": "Potato",
+    "potato": {
+      "carb" : 20,
       "protein": 2.02,
       "calorie": 77,
       "fibre": 2.2,
       "fat": 0.1,
-      "unit": "per 100g"
+      "unit": "g"
     }
-  ]
+
 }

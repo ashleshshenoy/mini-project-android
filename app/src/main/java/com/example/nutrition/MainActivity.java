@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         getStartedBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
