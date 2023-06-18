@@ -2,15 +2,20 @@ package com.example.nutrition;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
 import android.annotation.SuppressLint;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Layout;
 import android.view.View;
+import android.widget.Toast;
 
 public class Home extends AppCompatActivity {
 
@@ -30,6 +35,8 @@ public class Home extends AppCompatActivity {
         actionBar.setTitle("Hey " + sh.getString("username", "").toString() + " !");
 
         setContentView(R.layout.activity_home);
+
+
 
 
 
@@ -53,5 +60,11 @@ public class Home extends AppCompatActivity {
          });
 
 
+
+
+
+
     }
+
+
 }

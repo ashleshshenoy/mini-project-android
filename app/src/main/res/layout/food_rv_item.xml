@@ -12,7 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:focusable="true"
+        android:background="@drawable/button_selector_effect"
+        >
 
         <TextView
             android:id="@+id/idTVFoodName"
@@ -22,13 +25,14 @@
             android:gravity="fill_vertical"
             android:text="TextView" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageButton"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
             android:layout_weight="0"
             android:adjustViewBounds="true"
-            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/button_selector_effect"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/plusicon" />
     </LinearLayout>

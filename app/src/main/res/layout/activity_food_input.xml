@@ -72,52 +72,13 @@
 
     </NumberPicker>
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="222dp"
-        android:layout_height="28dp"
-        android:text="Pick the quantity "
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321" />
-
-    <TextView
-        android:id="@+id/caloriePlaceholder"
-        android:layout_width="322dp"
-        android:layout_height="37dp"
-        android:text="200g 390cal"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.211"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.409" />
-
-    <TextView
-        android:id="@+id/foodNamePlaceholder"
-        android:layout_width="356dp"
-        android:layout_height="40dp"
-        android:text="Food Name"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.362" />
-
     <Button
         android:id="@+id/foodEntrySubmitButton"
         android:layout_width="395dp"
-        android:layout_height="68dp"
+        android:layout_height="50dp"
         android:insetTop="0dp"
         android:insetBottom="0dp"
-        android:text="Button"
+        android:text="Add"
         app:iconPadding="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -255,6 +216,43 @@
                 android:gravity="center"
                 android:text="TextView" />
         </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:text="Pick the quantity "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/foodNamePlaceholder"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/caloriePlaceholder"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:text="200g 390cal"
+            android:textColor="#66BB6A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

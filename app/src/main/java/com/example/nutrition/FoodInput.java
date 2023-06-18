@@ -6,6 +6,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,10 +15,13 @@ import android.widget.NumberPicker;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
 
 import java.io.InputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
 
 public class FoodInput extends AppCompatActivity {
@@ -32,6 +36,8 @@ public class FoodInput extends AppCompatActivity {
     Double foodCarbValue;
     String unit;
 
+    String timing;
+    String date;
 
     TextView foodNamePlaceholder;
 
@@ -50,6 +56,11 @@ public class FoodInput extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide(); //<< this
 
+
+        timing = getIntent().getStringExtra("timing");
+        date = getIntent().getStringExtra("date");
+
+
         //definations
         setContentView(R.layout.activity_food_input);
         foodNamePlaceholder = (TextView) findViewById(R.id.foodNamePlaceholder);
@@ -60,7 +71,7 @@ public class FoodInput extends AppCompatActivity {
         carbPlcaeholder = (TextView)findViewById(R.id.carbPlaceholder);
         fibrePlaceholder = (TextView) findViewById(R.id.fibrePlaceholder);
         fatPlaceholder = (TextView)findViewById(R.id.fatPlaceholder);
-
+        foodEntrySubmitButton = (Button)findViewById(R.id.foodEntrySubmitButton);
 
 
 
@@ -68,6 +79,7 @@ public class FoodInput extends AppCompatActivity {
         foodQuantityPicker.setMinValue(1);
         foodQuantityPicker.setMaxValue(100);
         foodQuantityPicker.setWrapSelectorWheel(false);
+
         foodQuantityPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
             @Override
             public void onValueChange(NumberPicker numberPicker, int oldValue, int newValue) {
@@ -80,6 +92,8 @@ public class FoodInput extends AppCompatActivity {
                 fatPlaceholder.setText(String.format( "%.1f",foodFatValue * newValue) + "g");
             }
         });
+
+
 
 
         //load details of food item
@@ -95,7 +109,10 @@ public class FoodInput extends AppCompatActivity {
         foodEntrySubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                submitData();
                 Intent i = new Intent(FoodInput.this, calorie.class);
+                i.putExtra("date", date);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(i);
                 // save in shared preference
             }
@@ -136,6 +153,67 @@ public class FoodInput extends AppCompatActivity {
             Log.d("error" ,e + "");
             Toast.makeText(this, "" + e , Toast.LENGTH_LONG).show();
         }
+    }
+
+
+    public void submitData(){
+        // date + ENUM.value
+
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+
+        String key = date ;
+        SharedPreferences sharedPreferences = getSharedPreferences("FoodLog", MODE_PRIVATE);
+        SharedPreferences.Editor myEdit = sharedPreferences.edit();
+        JSONObject js  = new JSONObject();
+        try {
+        //check if json already exits
+            if(sharedPreferences.contains(key)){
+
+                    js = new JSONObject(sharedPreferences.getString(key, ""));
+                    JSONObject entry;
+                    if(js.has(timing)) {
+                         entry =  js.getJSONObject(timing);
+                         if(entry.has(foodName)){
+                            JSONObject item = entry.getJSONObject(foodName);
+                            item.put("quantity", item.getInt("quantity") +  foodQuantityPicker.getValue());
+                        }else{
+                             JSONObject item = new JSONObject();
+                            item.put("name", foodName);
+                            item.put("quantity", foodQuantityPicker.getValue());
+                            entry.put(foodName , item);
+                        }
+                    }else{
+                        entry = new JSONObject();
+                        JSONObject item = new JSONObject();
+                        item.put("name", foodName);
+                        item.put("quantity", foodQuantityPicker.getValue());
+                        entry.put(foodName , item);
+                        js.put(timing, entry);
+                    }
+
+            }
+            else{
+
+                JSONObject entry = new JSONObject();
+                JSONObject item = new JSONObject();
+                item.put("name", foodName);
+                item.put("quantity", foodQuantityPicker.getValue());
+                entry.put(foodName , item);
+                js.put(timing, entry);
+
+
+            }
+
+        } catch (Exception e) {
+        Toast.makeText(this, "" + e , Toast.LENGTH_SHORT).show();
+        }
+
+
+
+        myEdit.putString(key, js.toString());
+        myEdit.apply();
+
+
     }
 
 }

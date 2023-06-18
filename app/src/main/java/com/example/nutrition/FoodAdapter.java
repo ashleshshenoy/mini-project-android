@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,13 +15,17 @@ import java.util.ArrayList;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
 
+    String date;
+    String timing;
     // creating a variable for array list and context.
     private ArrayList<FoodModel> FoodModelArrayList;
     // creating a constructor for our variables.
     Context context;
-    public FoodAdapter(ArrayList<FoodModel> FoodModelArrayList, Context context) {
+    public FoodAdapter(ArrayList<FoodModel> FoodModelArrayList, Context context, String date, String timing) {
         this.FoodModelArrayList = FoodModelArrayList;
         this.context = context;
+        this.date = date;
+        this.timing = timing;
     }
 
     // method for filtering our recyclerview items.
@@ -40,7 +43,10 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
     public FoodAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // below line is to inflate our layout.
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.food_rv_item, parent, false);
+
         return new ViewHolder(view);
+
+
     }
 
     @Override
@@ -72,8 +78,12 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
             int position = this.getAdapterPosition();
             FoodModel selectedFood = FoodModelArrayList.get(position);
             String name = selectedFood.getFoodName();
+
+
             Intent i = new Intent(context, FoodInput.class );
             i.putExtra("name", name);
+            i.putExtra("date", date);
+            i.putExtra("timing", timing);
             context.startActivity(i);
 
             Log.d("clickfromlistener", "clicked"+ position);

@@ -30,6 +30,8 @@ public class TestingNew extends AppCompatActivity {
 
     // creating variables for
     // our ui components.
+    String date;
+    String timing;
     private RecyclerView foodRV;
 
     // variable for our adapter
@@ -46,8 +48,9 @@ public class TestingNew extends AppCompatActivity {
         // initializing our variables.
         foodRV = (RecyclerView) findViewById(R.id.idRVFood);
 
-        // calling method to
-        // build recycler view.
+        timing = getIntent().getStringExtra("timing");
+        date = getIntent().getStringExtra("date");
+        Toast.makeText(this, date + timing + "", Toast.LENGTH_SHORT).show();
 
         buildRecyclerView();
     }
@@ -142,7 +145,7 @@ public class TestingNew extends AppCompatActivity {
 
 
         // initializing our adapter class.
-        adapter = new FoodAdapter(FoodModelArrayList, TestingNew.this);
+        adapter = new FoodAdapter(FoodModelArrayList, TestingNew.this, date , timing);
 
         // adding layout manager to our recycler view.
         LinearLayoutManager manager = new LinearLayoutManager(this);

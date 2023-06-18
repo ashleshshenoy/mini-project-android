@@ -7,6 +7,8 @@
     android:layout_centerVertical="true"
     tools:context=".calorie">
 
+
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
@@ -23,9 +25,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFEFE"
             android:orientation="vertical"
             android:paddingBottom="50dp">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/calorieTile"
@@ -50,10 +58,10 @@
                     app:srcCompat="@drawable/eat" />
 
                 <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Eat upto 1150 Calories"
+                    android:id="@+id/totalDailyCalorieHolder"
+                    android:layout_width="159dp"
+                    android:layout_height="26dp"
+                    android:text="0 of 2000 calories"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +71,7 @@
                     app:layout_constraintVertical_bias="0.477" />
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/analyticsBtn"
                     android:layout_width="28dp"
                     android:layout_height="27dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -71,9 +79,29 @@
                     app:layout_constraintHorizontal_bias="0.945"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/analytics" />
+                    app:srcCompat="@drawable/charticon" />
+
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.harrywhewell.scrolldatepicker.DayScrollDatePicker
+                    android:id="@+id/day_date_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    app:baseColor="@color/white"
+                    app:baseTextColor="@color/default_base_text"
+                    app:selectedColor="@color/purple_200"
+                    app:selectedTextColor="@color/black"
+                    app:showFullDate="false"
+                    app:showTitle="true"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="16dp" />
+            </FrameLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -85,6 +113,7 @@
                     style="bold"
                     android:layout_width="149dp"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="2"
                     android:paddingStart="10dp"
                     android:text="Breakfast  "
@@ -92,10 +121,11 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView24"
+                    android:id="@+id/totalBreakfastCalorieHolder"
                     style="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center_vertical"
                     android:paddingStart="10dp"
                     android:text="  0 of 288 cal"
                     android:textColor="#000000"
@@ -105,7 +135,8 @@
                     android:id="@+id/breakfastAddBtn"
                     android:layout_width="60dp"
                     android:layout_height="20dp"
-                    app:srcCompat="@drawable/plusicon" />
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/roundedplusicon" />
             </LinearLayout>
 
             <LinearLayout
@@ -137,31 +168,35 @@
                     style="bold"
                     android:layout_width="149dp"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="2"
+                    android:gravity="center_vertical"
                     android:paddingStart="10dp"
                     android:text="Morning snacks  "
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView24"
+                    android:id="@+id/totalMorningSnackCalorieHolder"
                     style="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center_vertical"
                     android:paddingStart="10dp"
                     android:text="  0 of 288 cal"
                     android:textColor="#000000"
                     android:textSize="12dp" />
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/morningSnackAddBtn"
                     android:layout_width="60dp"
                     android:layout_height="20dp"
-                    app:srcCompat="@drawable/plusicon" />
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/roundedplusicon" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/testContainer"
+                android:id="@+id/morningSnackContainer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -190,30 +225,33 @@
                     android:layout_width="149dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
+                    android:gravity="center_vertical"
                     android:paddingStart="10dp"
                     android:text="Lunch"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView24"
+                    android:id="@+id/totalLunchCalorieHolder"
                     style="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center_vertical"
                     android:paddingStart="10dp"
                     android:text="  0 of 288 cal"
                     android:textColor="#000000"
                     android:textSize="12dp" />
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/lunchAddBtn"
                     android:layout_width="60dp"
                     android:layout_height="20dp"
-                    app:srcCompat="@drawable/plusicon" />
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/roundedplusicon" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/testContainer"
+                android:id="@+id/lunchContainer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -241,31 +279,35 @@
                     style="bold"
                     android:layout_width="149dp"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="2"
+                    android:gravity="fill_vertical"
                     android:paddingStart="10dp"
                     android:text="Evening snack"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView24"
+                    android:id="@+id/totalEveningCalorieHolder"
                     style="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center_vertical"
                     android:paddingStart="10dp"
                     android:text="  0 of 288 cal"
                     android:textColor="#000000"
                     android:textSize="12dp" />
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/eveningSnackAddBtn"
                     android:layout_width="60dp"
                     android:layout_height="20dp"
-                    app:srcCompat="@drawable/plusicon" />
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/roundedplusicon" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/testContainer"
+                android:id="@+id/eveningSnackContainer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -294,30 +336,33 @@
                     android:layout_width="149dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
+                    android:gravity="center_vertical"
                     android:paddingStart="10dp"
                     android:text="Dinner"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView24"
+                    android:id="@+id/totalDinnerCalorieHolder"
                     style="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center_vertical"
                     android:paddingStart="10dp"
                     android:text="  0 of 288 cal"
                     android:textColor="#000000"
                     android:textSize="12dp" />
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/dinnerAddBtn"
                     android:layout_width="60dp"
                     android:layout_height="20dp"
-                    app:srcCompat="@drawable/plusicon" />
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/roundedplusicon" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/testContainer"
+                android:id="@+id/dinnerContainer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"

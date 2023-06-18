@@ -1,52 +1,1749 @@
+
 {
+  "Apple": {
+    "carb": 3.5,
+    "protein": 0.3,
+    "calorie": 52,
+    "fibre": 2.4,
+    "fat": 0.2,
+    "unit": "g"
+  },
+  "Banana": {
+    "carb": 10,
+    "protein": 1.1,
+    "calorie": 96,
+    "fibre": 2.6,
+    "fat": 0.3,
+    "unit": "g"
+  },
+  "Broccoli": {
+    "carb": 6.64,
+    "protein": 2.82,
+    "calorie": 55,
+    "fibre": 2.6,
+    "fat": 0.64,
+    "unit": "g"
+  },
+  "Carrot": {
+    "carb": 9.58,
+    "protein": 0.93,
+    "calorie": 41,
+    "fibre": 2.8,
+    "fat": 0.24,
+    "unit": "g"
+  },
+  "Spinach": {
+    "carb": 3.63,
+    "protein": 2.86,
+    "calorie": 23,
+    "fibre": 2.2,
+    "fat": 0.39,
+    "unit": "g"
+  },
+  "Bell Pepper": {
+    "carb": 6,
+    "protein": 0.99,
+    "calorie": 31,
+    "fibre": 2.4,
+    "fat": 0.3,
+    "unit": "g"
+  },
+  "Cucumber": {
+    "carb": 3.63,
+    "protein": 0.65,
+    "calorie": 15,
+    "fibre": 0.5,
+    "fat": 0.11,
+    "unit": "g"
+  },
+  "Tomato": {
+    "carb": 3.9,
+    "protein": 0.88,
+    "calorie": 18,
+    "fibre": 1.2,
+    "fat": 0.2,
+    "unit": "g"
+  },
+  "Onion": {
+    "carb": 9.34,
+    "protein": 1.1,
+    "calorie": 40,
+    "fibre": 1.7,
+    "fat": 0.1,
+    "unit": "g"
+  },
+  "Zucchini": {
+    "carb": 3.11,
+    "protein": 1.21,
+    "calorie": 17,
+    "fibre": 1,
+    "fat": 0.32,
+    "unit": "g"
+  },
+  "Eggplant": {
+    "carb": 5.88,
+    "protein": 0.98,
+    "calorie": 25,
+    "fibre": 3,
+    "fat": 0.18,
+    "unit": "g"
+  },
+  "Mushroom": {
+    "carb": 3.26,
+    "protein": 3.09,
+    "calorie": 22,
+    "fibre": 1,
+    "fat": 0.34,
+    "unit": "g"
+  },
+  "Cauliflower": {
+    "carb": 4.97,
+    "protein": 1.92,
+    "calorie": 25,
+    "fibre": 2,
+    "fat": 0.28,
+    "unit": "g"
+  },
+  "Lettuce": {
+    "carb": 2.23,
+    "protein": 1.36,
+    "calorie": 5,
+    "fibre": 1.3,
+    "fat": 0.15,
+    "unit": "g"
+  },
+  "Radish": {
+    "carb": 3.4,
+    "protein": 0.68,
+    "calorie": 16,
+    "fibre": 1.6,
+    "fat": 0.1,
+    "unit": "g"
+  },
+  "Cabbage": {
+    "carb": 5.8,
+    "protein": 1.28,
+    "calorie": 25,
+    "fibre": 2.5,
+    "fat": 0.1,
+    "unit": "g"
+  },
+  "Sweet Potato": {
+    "carb": 20.12,
+    "protein": 1.57,
+    "calorie": 86,
+    "fibre": 3,
+    "fat": 0.05,
+    "unit": "g"
+  },
+  "Asparagus": {
+    "carb": 3.88,
+    "protein": 2.2,
+    "calorie": 20,
+    "fibre": 2.1,
+    "fat": 0.16,
+    "unit": "g"
+  },
+  "Green Beans": {
+    "carb": 7.88,
+    "protein": 1.82,
+    "calorie": 34,
+    "fibre": 3.4,
+    "fat": 0.18,
+    "unit": "g"
+  },
+  "Beetroot": {
+    "carb": 9.56,
+    "protein": 1.61,
+    "calorie": 43,
+    "fibre": 2.8,
+    "fat": 0.17,
+    "unit": "g"
+  },
+  "Pumpkin": {
+    "carb": 6.5,
+    "protein": 0.63,
+    "calorie": 26,
+    "fibre": 0.5,
+    "fat": 0.1,
+    "unit": "g"
+  },
+  "Peas": {
+    "carb": 14.45,
+    "protein": 5.42,
+    "calorie": 81,
+    "fibre": 5.1,
+    "fat": 0.4,
+    "unit": "g"
+  },
+  "Grapes": {
+    "carb": 18.1,
+    "protein": 0.72,
+    "calorie": 69,
+    "fibre": 0.9,
+    "fat": 0.16,
+    "unit": "g"
+  },
+  "Orange": {
+    "carb": 11.54,
+    "protein": 1.23,
+    "calorie": 43,
+    "fibre": 2.4,
+    "fat": 0.12,
+    "unit": "g"
+  },
+  "Strawberries": {
+    "carb": 7.68,
+    "protein": 0.67,
+    "calorie": 32,
+    "fibre": 2,
+    "fat": 0.3,
+    "unit": "g"
+  },
+  "Blueberries": {
+    "carb": 14.49,
+    "protein": 0.74,
+    "calorie": 57,
+    "fibre": 2.4,
+    "fat": 0.33,
+    "unit": "g"
+  },
+  "Raspberries": {
+    "carb": 12.23,
+    "protein": 1.2,
+    "calorie": 53,
+    "fibre": 6.5,
+    "fat": 0.65,
+    "unit": "g"
+  },
+  "Blackberries": {
+    "carb": 9.61,
+    "protein": 1.39,
+    "calorie": 43,
+    "fibre": 5.3,
+    "fat": 0.49,
+    "unit": "g"
+  },
+  "Watermelon": {
+    "carb": 7.55,
+    "protein": 0.61,
+    "calorie": 30,
+    "fibre": 0.6,
+    "fat": 0.15,
+    "unit": "g"
+  },
+  "Pineapple": {
+    "carb": 13.12,
+    "protein": 0.54,
+    "calorie": 50,
+    "fibre": 1.4,
+    "fat": 0.12,
+    "unit": "g"
+  },
+  "Mango": {
+    "carb": 14.98,
+    "protein": 0.82,
+    "calorie": 60,
+    "fibre": 1.6,
+    "fat": 0.38,
+    "unit": "g"
+  },
+  "Kiwi": {
+    "carb": 14.66,
+    "protein": 1.14,
+    "calorie": 61,
+    "fibre": 2.3,
+    "fat": 0.52,
+    "unit": "g"
+  },
+  "Peach": {
+    "carb": 9.54,
+    "protein": 0.91,
+    "calorie": 39,
+    "fibre": 1.5,
+    "fat": 0.25,
+    "unit": "g"
+  },
+  "Plum": {
+    "carb": 9.92,
+    "protein": 0.7,
+    "calorie": 46,
+    "fibre": 1.4,
+    "fat": 0.28,
+    "unit": "g"
+  },
+  "Pear": {
+    "carb": 15.23,
+    "protein": 0.38,
+    "calorie": 57,
+    "fibre": 3.1,
+    "fat": 0.14,
+    "unit": "g"
+  },
+  "Cherry": {
+    "carb": 12.18,
+    "protein": 1.06,
+    "calorie": 50,
+    "fibre": 2.1,
+    "fat": 0.2,
+    "unit": "g"
+  },
+  "Grapefruit": {
+    "carb": 11.4,
+    "protein": 0.77,
+    "calorie": 42,
+    "fibre": 1.6,
+    "fat": 0.1,
+    "unit": "g"
+  },
+  "Cantaloupe": {
+    "carb": 8.16,
+    "protein": 0.84,
+    "calorie": 34,
+    "fibre": 0.9,
+    "fat": 0.19,
+    "unit": "g"
+  },
+  "Lemon": {
+    "carb": 9.32,
+    "protein": 1.1,
+    "calorie": 29,
+    "fibre": 2.8,
+    "fat": 0.3,
+    "unit": "g"
+  },
+  "Lime": {
+    "carb": 10.5,
+    "protein": 0.67,
+    "calorie": 30,
+    "fibre": 2.8,
+    "fat": 0.2,
+    "unit": "g"
+  },
+  "Apricot": {
+    "carb": 3.9,
+    "protein": 0.5,
+    "calorie": 15,
+    "fibre": 0.5,
+    "fat": 0.1,
+    "unit": "g"
+  },
+  "Fig": {
+    "carb": 19.18,
+    "protein": 0.75,
+    "calorie": 74,
+    "fibre": 2.9,
+    "fat": 0.3,
+    "unit": "g"
+  },
+  "Cranberry": {
+    "carb": 12.2,
+    "protein": 0.39,
+    "calorie": 46,
+    "fibre": 4.6,
+    "fat": 0.13,
+    "unit": "g"
+  },
+  "Raisins": {
+    "carb": 79.18,
+    "protein": 3.07,
+    "calorie": 299,
+    "fibre": 3.7,
+    "fat": 0.46,
+    "unit": "g"
+  },
+  "Pomegranate": {
+    "carb": 17.17,
+    "protein": 1.67,
+    "calorie": 83,
+    "fibre": 4,
+    "fat": 1.17,
+    "unit": "g"
+  },
+  "Passion Fruit": {
+    "carb": 23.38,
+    "protein": 2.2,
+    "calorie": 97,
+    "fibre": 10.4,
+    "fat": 1.46,
+    "unit": "g"
+  },
+  "Dragon Fruit": {
+    "carb": 9.6,
+    "protein": 1.2,
+    "calorie": 60,
+    "fibre": 1,
+    "fat": 0.4,
+    "unit": "g"
+  },
+  "Biryani": {
+    "carb": 35,
+    "protein": 10,
+    "calorie": 400,
+    "fibre": 2,
+    "fat": 15,
+    "unit": "g"
+  },
+  "Butter Chicken": {
+    "carb": 20,
+    "protein": 25,
+    "calorie": 350,
+    "fibre": 3,
+    "fat": 18,
+    "unit": "g"
+  },
+  "Chole Bhature": {
+    "carb": 60,
+    "protein": 10,
+    "calorie": 500,
+    "fibre": 5,
+    "fat": 25,
+    "unit": "g"
+  },
+  "Paneer Tikka": {
+    "carb": 10,
+    "protein": 15,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Dosa": {
+    "carb": 30,
+    "protein": 5,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Idli": {
+    "carb": 20,
+    "protein": 3,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 1,
+    "unit": "g"
+  },
+  "Vada": {
+    "carb": 25,
+    "protein": 5,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Samosa": {
+    "carb": 30,
+    "protein": 5,
+    "calorie": 250,
+    "fibre": 3,
+    "fat": 15,
+    "unit": "g"
+  },
+  "Pakora": {
+    "carb": 20,
+    "protein": 5,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Chaat": {
+    "carb": 25,
+    "protein": 5,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Dal Makhani": {
+    "carb": 20,
+    "protein": 10,
+    "calorie": 250,
+    "fibre": 5,
+    "fat": 15,
+    "unit": "g"
+  },
+  "Rajma": {
+    "carb": 25,
+    "protein": 10,
+    "calorie": 300,
+    "fibre": 6,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Palak Paneer": {
+    "carb": 10,
+    "protein": 15,
+    "calorie": 200,
+    "fibre": 4,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Matar Paneer": {
+    "carb": 15,
+    "protein": 10,
+    "calorie": 250,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Aloo Gobi": {
+    "carb": 20,
+    "protein": 5,
+    "calorie": 150,
+    "fibre": 4,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Malai Kofta": {
+    "carb": 30,
+    "protein": 10,
+    "calorie": 300,
+    "fibre": 5,
+    "fat": 15,
+    "unit": "g"
+  },
+  "Chicken Curry": {
+    "carb": 10,
+    "protein": 20,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Fish Curry": {
+    "carb": 10,
+    "protein": 15,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Mutton Curry": {
+    "carb": 10,
+    "protein": 25,
+    "calorie": 300,
+    "fibre": 2,
+    "fat": 15,
+    "unit": "g"
+  },
+  "Bhindi Masala": {
+    "carb": 10,
+    "protein": 5,
+    "calorie": 100,
+    "fibre": 3,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Baingan Bharta": {
+    "carb": 15,
+    "protein": 5,
+    "calorie": 150,
+    "fibre": 4,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Pani Puri": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Bhel Puri": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 150,
+    "fibre": 3,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Pav Bhaji": {
+    "carb": 30,
+    "protein": 5,
+    "calorie": 250,
+    "fibre": 4,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Aloo Paratha": {
+    "carb": 40,
+    "protein": 5,
+    "calorie": 300,
+    "fibre": 4,
+    "fat": 15,
+    "unit": "g"
+  },
+  "Paneer Paratha": {
+    "carb": 35,
+    "protein": 10,
+    "calorie": 350,
+    "fibre": 3,
+    "fat": 18,
+    "unit": "g"
+  },
+  "Chapati": {
+    "carb": 20,
+    "protein": 3,
+    "calorie": 100,
+    "fibre": 2,
+    "fat": 1,
+    "unit": "g"
+  },
+  "Naan": {
+    "carb": 30,
+    "protein": 5,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Pulao": {
+    "carb": 40,
+    "protein": 5,
+    "calorie": 300,
+    "fibre": 3,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Tandoori Chicken": {
+    "carb": 2,
+    "protein": 30,
+    "calorie": 250,
+    "fibre": 1,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Chicken Biryani": {
+    "carb": 35,
+    "protein": 15,
+    "calorie": 400,
+    "fibre": 2,
+    "fat": 18,
+    "unit": "g"
+  },
+  "Gulab Jamun": {
+    "carb": 20,
+    "protein": 3,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Rasgulla": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 200,
+    "fibre": 0.5,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Jalebi": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 250,
+    "fibre": 0.5,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kheer": {
+    "carb": 40,
+    "protein": 5,
+    "calorie": 300,
+    "fibre": 1,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Rasmalai": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 200,
+    "fibre": 0.5,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Lassi": {
+    "carb": 20,
+    "protein": 5,
+    "calorie": 150,
+    "fibre": 0.5,
+    "fat": 5,
+    "unit": "ml"
+  },
+  "Mango Shake": {
+    "carb": 40,
+    "protein": 5,
+    "calorie": 300,
+    "fibre": 1,
+    "fat": 5,
+    "unit": "ml"
+  },
+  "Butter Naan": {
+    "carb": 35,
+    "protein": 5,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Tandoori Roti": {
+    "carb": 20,
+    "protein": 3,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 1,
+    "unit": "g"
+  },
+  "Kulfi": {
+    "carb": 30,
+    "protein": 5,
+    "calorie": 200,
+    "fibre": 0.5,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Pav": {
+    "carb": 20,
+    "protein": 3,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 1,
+    "unit": "g"
+  },
+  "Khichdi": {
+    "carb": 30,
+    "protein": 5,
+    "calorie": 250,
+    "fibre": 4,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kachori": {
+    "carb": 25,
+    "protein": 5,
+    "calorie": 200,
+    "fibre": 3,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Puran Poli": {
+    "carb": 40,
+    "protein": 5,
+    "calorie": 300,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Gajar Halwa": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 250,
+    "fibre": 1,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Chicken Biryani": {
+    "carb": 35,
+    "protein": 15,
+    "calorie": 400,
+    "fibre": 2,
+    "fat": 18,
+    "unit": "g"
+  },
+  "Prawn Curry": {
+    "carb": 10,
+    "protein": 15,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Aloo Tikki": {
+    "carb": 20,
+    "protein": 3,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Chana Masala": {
+    "carb": 25,
+    "protein": 10,
+    "calorie": 300,
+    "fibre": 6,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kadai Paneer": {
+    "carb": 15,
+    "protein": 10,
+    "calorie": 250,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "g"
+  },
 
-  "Apple":{
-      "carb": 3.5,
-      "protein": 0.3,
-      "calorie": 52,
-      "fibre": 2.4,
-      "fat": 0.2,
-      "unit": "g"
-    },
-    "Banana": {
-      "carb":10,
-      "protein": 1.1,
-      "calorie": 96,
-      "fibre": 2.6,
-      "fat": 0.3,
-      "unit": "ml"
-    },
-    "Mango": {
-      "carb": 20,
-      "protein": 0.82,
-      "calorie": 60,
-      "fibre": 1.6,
-      "fat": 0.38,
-      "unit": "g"
-    },
-    "Carrot":{
-      "carb":2,
-      "protein": 0.9,
-      "calorie": 41,
-      "fibre": 2.8,
-      "fat": 0.2,
-      "unit": "g"
-    },
-    "Tomato":{
-      "carb": 2,
-      "protein": 0.9,
-      "calorie": 18,
-      "fibre": 1.2,
-      "fat": 0.2,
-      "unit": "g"
-    },
-    "potato": {
-      "carb" : 20,
-      "protein": 2.02,
-      "calorie": 77,
-      "fibre": 2.2,
-      "fat": 0.1,
-      "unit": "g"
-    }
+  "Masala Dosa": {
+    "carb": 40,
+    "protein": 6,
+    "calorie": 300,
+    "fibre": 4,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Idli Sambar": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Uttapam": {
+    "carb": 35,
+    "protein": 5,
+    "calorie": 250,
+    "fibre": 3,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Pongal": {
+    "carb": 45,
+    "protein": 6,
+    "calorie": 350,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Medu Vada": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Coconut Chutney": {
+    "carb": 10,
+    "protein": 1,
+    "calorie": 50,
+    "fibre": 1,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Sambhar": {
+    "carb": 15,
+    "protein": 3,
+    "calorie": 100,
+    "fibre": 2,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Rasam": {
+    "carb": 10,
+    "protein": 2,
+    "calorie": 50,
+    "fibre": 1,
+    "fat": 1,
+    "unit": "g"
+  },
+  "Pesarattu": {
+    "carb": 30,
+    "protein": 5,
+    "calorie": 250,
+    "fibre": 4,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Upma": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 300,
+    "fibre": 3,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Vada Curry": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Appam": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Tomato Chutney": {
+    "carb": 10,
+    "protein": 1,
+    "calorie": 50,
+    "fibre": 1,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Avial": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Bisi Bele Bath": {
+    "carb": 40,
+    "protein": 5,
+    "calorie": 350,
+    "fibre": 4,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Coconut Rice": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Curd Rice": {
+    "carb": 25,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Lemon Rice": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Puliyodarai": {
+    "carb": 35,
+    "protein": 4,
+    "calorie": 300,
+    "fibre": 3,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Cabbage Poriyal": {
+    "carb": 10,
+    "protein": 2,
+    "calorie": 50,
+    "fibre": 2,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Beans Poriyal": {
+    "carb": 10,
+    "protein": 2,
+    "calorie": 50,
+    "fibre": 2,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Carrot Poriyal": {
+    "carb": 10,
+    "protein": 2,
+    "calorie": 50,
+    "fibre": 2,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Kootu": {
+    "carb": 20,
+    "protein": 3,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Sambar Rice": {
+    "carb": 40,
+    "protein": 5,
+    "calorie": 350,
+    "fibre": 3,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Curd Vada": {
+    "carb": 25,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kesari": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 250,
+    "fibre": 1,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Mysore Pak": {
+    "carb": 35,
+    "protein": 4,
+    "calorie": 300,
+    "fibre": 1,
+    "fat": 15,
+    "unit": "g"
+  },
+  "Rava Upma": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Puliyogare": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 350,
+    "fibre": 3,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Kozhukattai": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Vermicelli Upma": {
+    "carb": 35,
+    "protein": 4,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Onion Rava Dosa": {
+    "carb": 45,
+    "protein": 6,
+    "calorie": 350,
+    "fibre": 4,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Tomato Rice": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 300,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Mango Rice": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Lemon Sevai": {
+    "carb": 35,
+    "protein": 4,
+    "calorie": 300,
+    "fibre": 3,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Coconut Sevai": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Pulihora": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 350,
+    "fibre": 3,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Curry Leaves Rice": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Curd Rice": {
+    "carb": 25,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Tamarind Rice": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 350,
+    "fibre": 3,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Adai": {
+    "carb": 35,
+    "protein": 5,
+    "calorie": 250,
+    "fibre": 4,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Rava Kesari": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 250,
+    "fibre": 1,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Banana Bonda": {
+    "carb": 20,
+    "protein": 3,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Cabbage Kootu": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 2,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Vendakkai Poriyal": {
+    "carb": 10,
+    "protein": 2,
+    "calorie": 50,
+    "fibre": 2,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Pineapple Rasam": {
+    "carb": 10,
+    "protein": 2,
+    "calorie": 50,
+    "fibre": 1,
+    "fat": 1,
+    "unit": "g"
+  },
+  "Curd Vada": {
+    "carb": 25,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kadala Curry": {
+    "carb": 20,
+    "protein": 5,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Paruppu Payasam": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 250,
+    "fibre": 1,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Puli Inji": {
+    "carb": 10,
+    "protein": 1,
+    "calorie": 50,
+    "fibre": 1,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Kadambam Salad": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 2,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Kathirikai Gothsu": {
+    "carb": 10,
+    "protein": 2,
+    "calorie": 50,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Pappu Charu": {
+    "carb": 15,
+    "protein": 3,
+    "calorie": 100,
+    "fibre": 2,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Milagu Kuzhambu": {
+    "carb": 10,
+    "protein": 2,
+    "calorie": 50,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Mango Pachadi": {
+    "carb": 20,
+    "protein": 1,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Thayir Vadai": {
+    "carb": 25,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Keerai Masiyal": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 2,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Coconut Burfi": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 250,
+    "fibre": 1,
+    "fat": 15,
+    "unit": "g"
+  },
+  "Mysore Masala Dosa": {
+    "carb": 40,
+    "protein": 5,
+    "calorie": 350,
+    "fibre": 3,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Medu Vada": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Bisi Bele Bath": {
+    "carb": 40,
+    "protein": 5,
+    "calorie": 350,
+    "fibre": 4,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Puliyogare": {
+    "carb": 35,
+    "protein": 4,
+    "calorie": 300,
+    "fibre": 3,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Kotte Kadubu": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Neer Dosa": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Mangalore Buns": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kori Gassi": {
+    "carb": 25,
+    "protein": 6,
+    "calorie": 300,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Majjige Huli": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Kane Rava Fry": {
+    "carb": 15,
+    "protein": 5,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Puliyogare Gojju": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Goli Baje": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Mangalorean Chicken Curry": {
+    "carb": 25,
+    "protein": 8,
+    "calorie": 350,
+    "fibre": 2,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Kori Sukka": {
+    "carb": 20,
+    "protein": 7,
+    "calorie": 300,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Goli Baje": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Mangalorean Fish Curry": {
+    "carb": 15,
+    "protein": 6,
+    "calorie": 300,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kori Rotti": {
+    "carb": 40,
+    "protein": 7,
+    "calorie": 400,
+    "fibre": 3,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kudla Prawn Curry": {
+    "carb": 20,
+    "protein": 9,
+    "calorie": 350,
+    "fibre": 2,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Neer Dosa with Chicken Curry": {
+    "carb": 40,
+    "protein": 8,
+    "calorie": 400,
+    "fibre": 3,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Mangalorean Mutton Curry": {
+    "carb": 20,
+    "protein": 10,
+    "calorie": 400,
+    "fibre": 2,
+    "fat": 14,
+    "unit": "g"
+  },
+  "Pundi": {
+    "carb": 30,
+    "protein": 5,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Mangalorean Pork Curry": {
+    "carb": 20,
+    "protein": 8,
+    "calorie": 350,
+    "fibre": 2,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Kori Ghee Roast": {
+    "carb": 25,
+    "protein": 7,
+    "calorie": 350,
+    "fibre": 2,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Mangalorean Crab Curry": {
+    "carb": 15,
+    "protein": 6,
+    "calorie": 300,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Mysore Bonda": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kori Rotti with Chicken Curry": {
+    "carb": 40,
+    "protein": 9,
+    "calorie": 450,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Mangalorean Fish Fry": {
+    "carb": 15,
+    "protein": 6,
+    "calorie": 250,
+    "fibre": 1,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kane Rava Fry": {
+    "carb": 15,
+    "protein": 5,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Mangalorean Egg Curry": {
+    "carb": 20,
+    "protein": 7,
+    "calorie": 300,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Ghee Roast Dosa": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 300,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Kori Sukka": {
+    "carb": 20,
+    "protein": 7,
+    "calorie": 300,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Bunt Chicken Curry": {
+    "carb": 25,
+    "protein": 8,
+    "calorie": 350,
+    "fibre": 2,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Mangalorean Prawn Fry": {
+    "carb": 15,
+    "protein": 8,
+    "calorie": 300,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Mysore Pak": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 250,
+    "fibre": 1,
+    "fat": 15,
+    "unit": "g"
+  },
+  "Kori Gassi with Neer Dosa": {
+    "carb": 40,
+    "protein": 8,
+    "calorie": 400,
+    "fibre": 3,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Mangalorean Mutton Fry": {
+    "carb": 15,
+    "protein": 10,
+    "calorie": 400,
+    "fibre": 2,
+    "fat": 14,
+    "unit": "g"
+  },
+  "Bisi Bele Bath with Mysore Masala Dosa": {
+    "carb": 60,
+    "protein": 9,
+    "calorie": 700,
+    "fibre": 6,
+    "fat": 16,
+    "unit": "g"
+  },
+  "Mangalorean Crab Masala": {
+    "carb": 20,
+    "protein": 7,
+    "calorie": 350,
+    "fibre": 2,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Udupi Sambar": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 3,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Kori Ghee Roast with Neer Dosa": {
+    "carb": 40,
+    "protein": 9,
+    "calorie": 450,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Mangalorean Fish Curry with Neer Dosa": {
+    "carb": 45,
+    "protein": 10,
+    "calorie": 500,
+    "fibre": 4,
+    "fat": 14,
+    "unit": "g"
+  },
+  "Mysore Bonda with Coconut Chutney": {
+    "carb": 25,
+    "protein": 4,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kori Rotti with Mangalorean Chicken Curry": {
+    "carb": 45,
+    "protein": 10,
+    "calorie": 500,
+    "fibre": 4,
+    "fat": 14,
+    "unit": "g"
+  },
+  "Mangalorean Prawn Curry with Neer Dosa": {
+    "carb": 40,
+    "protein": 12,
+    "calorie": 550,
+    "fibre": 3,
+    "fat": 16,
+    "unit": "g"
+  },
+  "Bunt Chicken Fry": {
+    "carb": 15,
+    "protein": 8,
+    "calorie": 300,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Mangalorean Mutton Masala": {
+    "carb": 20,
+    "protein": 12,
+    "calorie": 450,
+    "fibre": 3,
+    "fat": 16,
+    "unit": "g"
+  },
+  "Kane Rava Fry with Neer Dosa": {
+    "carb": 40,
+    "protein": 7,
+    "calorie": 450,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Mangalorean Crab Curry with Neer Dosa": {
+    "carb": 35,
+    "protein": 10,
+    "calorie": 500,
+    "fibre": 4,
+    "fat": 14,
+    "unit": "g"
+  },
+  "Ghee Roast Dosa with Coconut Chutney": {
+    "carb": 35,
+    "protein": 5,
+    "calorie": 350,
+    "fibre": 3,
+    "fat": 8,
+    "unit": "g"
+  },
 
+  "Chole Bhature": {
+    "carb": 50,
+    "protein": 10,
+    "calorie": 500,
+    "fibre": 5,
+    "fat": 20,
+    "unit": "g"
+  },
+  "Paneer Tikka": {
+    "carb": 10,
+    "protein": 15,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Aloo Paratha": {
+    "carb": 40,
+    "protein": 5,
+    "calorie": 350,
+    "fibre": 3,
+    "fat": 15,
+    "unit": "g"
+  },
+  "Palak Paneer": {
+    "carb": 15,
+    "protein": 10,
+    "calorie": 200,
+    "fibre": 4,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Dal Makhani": {
+    "carb": 30,
+    "protein": 8,
+    "calorie": 300,
+    "fibre": 6,
+    "fat": 15,
+    "unit": "g"
+  },
+  "Butter Chicken": {
+    "carb": 25,
+    "protein": 20,
+    "calorie": 400,
+    "fibre": 2,
+    "fat": 18,
+    "unit": "g"
+  },
+  "Naan": {
+    "carb": 30,
+    "protein": 5,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Malai Kofta": {
+    "carb": 20,
+    "protein": 8,
+    "calorie": 350,
+    "fibre": 4,
+    "fat": 16,
+    "unit": "g"
+  },
+  "Pani Puri": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Rajma Chawal": {
+    "carb": 50,
+    "protein": 10,
+    "calorie": 400,
+    "fibre": 8,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Matar Paneer": {
+    "carb": 20,
+    "protein": 10,
+    "calorie": 250,
+    "fibre": 4,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Aloo Tikki": {
+    "carb": 25,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 3,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Gulab Jamun": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  }
 }

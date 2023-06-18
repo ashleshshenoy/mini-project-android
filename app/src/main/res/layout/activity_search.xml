@@ -1,71 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".search">
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
 
-    <LinearLayout
+
+    <com.harrywhewell.scrolldatepicker.DayScrollDatePicker
+        android:id="@+id/day_date_picker"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginBottom="20dp"
-
-            android:background="@color/white"
-            android:elevation="4dp"
-            android:orientation="horizontal"
-            android:outlineProvider="bounds">
+        android:layout_height="191dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="248dp"
+        android:layout_marginBottom="412dp"
+        app:baseColor="@color/white"
+        app:baseTextColor="@color/default_base_text"
+        app:selectedColor="@color/purple_200"
+        app:selectedTextColor="@color/black"
+        app:showTitle="true"
+        app:showFullDate="false"
+        />
 
 
-            <EditText
-                android:id="@+id/searchBar"
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:layout_weight="2"
-                android:background="@null"
-                android:ems="10"
-                android:hint="search for food.... 🍔"
-                android:inputType="text"
-                android:paddingStart="20dp"
-                android:textSize="14sp" />
-
-            <ImageButton
-                android:id="@+id/searchButton"
-                android:layout_width="70dp"
-                android:layout_height="60dp"
-                android:backgroundTint="#FFFFFF"
-                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
-
-        </LinearLayout>
-
-        <ScrollView
-            android:id="@+id/scrollView3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="30"
-            android:background="#FFFEFE">
-
-            <LinearLayout
-                android:id="@+id/itemContainer"
-                android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:orientation="vertical" >
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal" />
-            </LinearLayout>
-        </ScrollView>
-
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
