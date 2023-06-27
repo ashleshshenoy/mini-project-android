@@ -15,6 +15,15 @@
         android:theme="@style/Theme.Nutrition"
         tools:targetApi="31">
         <activity
+            android:name=".AddWeightLog"
+            android:exported="false" />
+        <activity
+            android:name=".Target"
+            android:exported="false" />
+        <activity
+            android:name=".GoalTime"
+            android:exported="false" />
+        <activity
             android:name=".Goal"
             android:exported="false" />
         <activity
@@ -53,6 +62,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+        <receiver android:name=".NotificationReceiver" />
     </application>
 
 </manifest>

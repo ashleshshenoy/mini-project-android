@@ -35,14 +35,18 @@ import com.google.android.material.appbar.AppBarLayout;
 import com.harrywhewell.scrolldatepicker.DayScrollDatePicker;
 import com.harrywhewell.scrolldatepicker.OnDateSelectedListener;
 
+import org.joda.time.LocalDate;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
 
 import java.io.InputStream;
+import java.text.ParseException;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Iterator;
 
 public class calorie extends AppCompatActivity {
@@ -104,6 +108,7 @@ public class calorie extends AppCompatActivity {
     int totalDinnerCalorie = 0;
     int totalDailyCalorie = 0;
 
+    int dailyCalorieBuget;
 
 
     @SuppressLint({"MissingInflatedId", "ResourceType"})
@@ -126,8 +131,16 @@ public class calorie extends AppCompatActivity {
         SimpleDateFormat fdate = new SimpleDateFormat("dd/MM/yyyy");
         TextView titleText = (TextView) findViewById(R.id.titleDateHolder);
         date = (getIntent().hasExtra("date"))? getIntent().getStringExtra("date"): fdate.format(new Date());
-        titleText.setText((date.contentEquals(fdate.format(new Date())) )?"Today": date );
+        try {
 
+            if(date.contentEquals(fdate.format(new Date())))
+                titleText.setText("Today");
+            else
+                titleText.setText(new SimpleDateFormat("dd MMM").format(fdate.parse(date)));
+
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
 
 
         //initalise everything
@@ -155,20 +168,35 @@ public class calorie extends AppCompatActivity {
         totalDailyCalorieHolder = (TextView) findViewById(R.id.totalDailyCalorieHolder);
 
 
+        // setting daily calories buget;
+        SharedPreferences sharedPreferences = getSharedPreferences("UserDetails", MODE_PRIVATE);
+        dailyCalorieBuget =  sharedPreferences.getInt("calorie", 0);
+        totalDailyCalorieHolder.setText("0 of " + dailyCalorieBuget + " calories");
+        totalBreakfastCalorieHolder.setText("0 of " + (int)Math.round(dailyCalorieBuget * 0.25) + " cal");
+        totalMorningSnackCalorieHolder.setText("0 of " +(int)Math.round( dailyCalorieBuget * 0.125) + " cal");
+        totalLunchCalorieHolder.setText("0 of " + (int)Math.round(dailyCalorieBuget * 0.25) + " cal");
+        totalEveningSnackCalorieHolder.setText("0 of " + (int)Math.round(dailyCalorieBuget * 0.125) + " cal");
+        totalDinnerCalorieHolder.setText("0 of "+ (int)Math.round(dailyCalorieBuget * 0.25) + " cal");
+
 
 
 
         DayScrollDatePicker sd = (DayScrollDatePicker) findViewById(R.id.day_date_picker);
-        sd.setStartDate(1,5,2023);
-        sd.setEndDate(15,6,2023);
+        LocalDate today = LocalDate.now();
+        sd.setEndDate(today.getDayOfMonth(), today.getMonthOfYear(), today.getYear());
+        LocalDate lastAvailableDate = today.minusDays(15);
+        sd.setStartDate(lastAvailableDate.getDayOfMonth(), lastAvailableDate.getMonthOfYear(), lastAvailableDate.getYear());
         sd.setVisibility(View.GONE);
+
+
         actionBar.getCustomView().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(sd.getVisibility() == View.VISIBLE)
                     sd.setVisibility(View.GONE);
-                else
+                else {
                     sd.setVisibility(View.VISIBLE);
+                }
             }
         });
 
@@ -205,6 +233,7 @@ public class calorie extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(calorie.this, Analytics.class);
+                i.putExtra("date", date);
                 startActivity(i);
             }
         });

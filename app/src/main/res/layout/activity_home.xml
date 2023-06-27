@@ -224,7 +224,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/weight" />
+                app:srcCompat="@drawable/cycle" />
 
             <TextView
                 android:id="@+id/textView10"

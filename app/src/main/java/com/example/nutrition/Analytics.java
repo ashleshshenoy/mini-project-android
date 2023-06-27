@@ -1,164 +1,302 @@
 package com.example.nutrition;
 
+import android.annotation.SuppressLint;
+import android.content.SharedPreferences;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.Spinner;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.graphics.Color;
-import android.os.Bundle;
 
-import com.github.mikephil.charting.charts.BarChart;
-import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.charts.PieChart;
-import com.github.mikephil.charting.components.Description;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.components.YAxis;
-import com.github.mikephil.charting.data.BarData;
-import com.github.mikephil.charting.data.BarDataSet;
-import com.github.mikephil.charting.data.BarEntry;
-import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
-import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
-import com.github.mikephil.charting.utils.ColorTemplate;
 
+import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
-public  class Analytics extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+import org.json.JSONObject;
 
-    String[] macros = {"Protien", "Fat", "Carbs", "Fibre"};
+public  class Analytics extends AppCompatActivity {
+
+    String date ="today";
+
+    Double protein = 0.0;
+    Double fat = 0.0;
+    Double fibre = 0.0;
+    Double carbs = 0.0;
+    int calories =0;
+
+    TextView proteinProgressText;
+    TextView fatProgressText;
+    TextView fibreProgressText;
+    TextView carbsProgressText;
+    TextView calorieProgressText;
+    TextView calorieProgressPercentage;
+    TextView proteinProgressPercentage;
+    TextView carbsProgressPercentage;
+    TextView fibreProgressPercentage;
+    TextView fatProgressPercentage;
 
 
+    ProgressBar proteinProgressBar;
+    ProgressBar fatProgressBar;
+    ProgressBar fibreProgressBar;
+    ProgressBar carbsProgressBar;
+
+
+
+    public Analytics() {
+        super(R.layout.activity_analytics);
+    }
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_analytics);
+        if (savedInstanceState == null) {
+            Bundle bundle = new Bundle();
+            date = getIntent().getStringExtra("date");
+            bundle.putString("dateArgument", date);
+
+            getSupportFragmentManager().beginTransaction()
+                    .setReorderingAllowed(true)
+                    .add(R.id.barchartContainer, barchartAnalysis.class, bundle)
+                    .commit();
+        }
 
 
+        proteinProgressBar = (ProgressBar) findViewById(R.id.proteinProgressBar);
+        fatProgressBar = (ProgressBar)findViewById(R.id.fatProgressBar);
+        fibreProgressBar = (ProgressBar) findViewById(R.id.fibreProgressBar);
+        carbsProgressBar = (ProgressBar)findViewById(R.id.carbsProgressBar);
+        proteinProgressText = (TextView)findViewById(R.id.proteinProgressText);
+        fatProgressText = (TextView)findViewById(R.id.fatProgressText);
+        fibreProgressText = (TextView)findViewById(R.id.fibreProgressText);
+        carbsProgressText = (TextView)findViewById(R.id.carbProgressText);
+        calorieProgressText = (TextView)findViewById(R.id.calorieProgressText);
+        proteinProgressPercentage = (TextView)findViewById(R.id.proteinProgressPercentage);
+        calorieProgressPercentage = (TextView)findViewById(R.id.calorieProgressPercentage);
+        fibreProgressPercentage = (TextView)findViewById(R.id.fibreProgressPercentage);
+        carbsProgressPercentage = (TextView)findViewById(R.id.carbsProgressPercentage);
+        fatProgressPercentage = (TextView)findViewById(R.id.fatProgressPercentage);
 
 
-
-
-
-        //barchat
-        BarChart chart = (BarChart) findViewById(R.id.chart);
-        ArrayList<IBarDataSet> dataSets = new ArrayList<>();
-        List<String> xAxisValues = new ArrayList<>(Arrays.asList("feb 1", "feb 2","feb 3 ", "feb 4", "feb 5", "feb 6", "feb 7"));
-        List<BarEntry> incomeEntries = getMacroEntries();
-        dataSets = new ArrayList<>();
-        BarDataSet set;
-        set = new BarDataSet(incomeEntries, "macros");
-        set.setColor(Color.rgb(255, 175, 0));
-        set.setValueTextColor(R.color.black);
-        dataSets.add(set);
-        chart.setTouchEnabled(true);
-        chart.setDragEnabled(true);
-        chart.setScaleEnabled(false);
-        chart.setPinchZoom(false);
-        chart.setDrawGridBackground(false);
-        chart.setExtraLeftOffset(15);
-        chart.setExtraRightOffset(15);
-        //to hide background lines
-        chart.getXAxis().setDrawGridLines(false);
-        chart.getAxisLeft().setDrawGridLines(false);
-        chart.getAxisRight().setDrawGridLines(false);
-        //to hide right Y and top X border
-        YAxis rightYAxis = chart.getAxisRight();
-        rightYAxis.setEnabled(false);
-        YAxis leftYAxis = chart.getAxisLeft();
-        leftYAxis.setEnabled(false);
-        XAxis bottomXAxis = chart.getXAxis();
-        bottomXAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-        bottomXAxis.setEnabled(true);
-        chart.getDescription().setEnabled(false);
-        //data
-        chart.getXAxis().setValueFormatter(new com.github.mikephil.charting.formatter.IndexAxisValueFormatter(xAxisValues));
-        BarData data = new BarData(dataSets);
-        data.setBarWidth(0.8f);
-        chart.setData(data);
-        //animate & refresh
-        chart.animateX(2000);
-        chart.invalidate();
-
-
+        loadMacrosData();
+        loadMacroProgress();
 
 
 
         //pie chart
-        PieChart pieChart = (PieChart)findViewById(R.id.pieChart);
+        PieChart pieChart = (PieChart) findViewById(R.id.pieChart);
         List<PieEntry> entries = new ArrayList<>();
-        entries.add(new PieEntry(18.5f, "Protien"));
-        entries.add(new PieEntry(30.8f, "Fibre"));
-        entries.add(new PieEntry(26.7f, "Fat"));
-        entries.add(new PieEntry(50.0f, "Carbs"));
+        entries.add(new PieEntry( Float.parseFloat(String.format("%.2f",protein)), "Protien"));
+        entries.add(new PieEntry(Float.parseFloat(String.format("%.2f",fibre)), "Fibre"));
+        entries.add(new PieEntry(Float.parseFloat(String.format("%.2f",fat)), "Fat"));
+        entries.add(new PieEntry(Float.parseFloat(String.format("%.2f",carbs)), "Carbs"));
         PieDataSet pieSet = new PieDataSet(entries, "Macro composition");
         PieData pieData = new PieData(pieSet);
         pieSet.setColors(R.color.white);
         pieSet.setColors(new int[] { Color.rgb(225,20,0), Color.rgb(100,225,20),Color.rgb(225,105,0), Color.rgb(0,140,225) });
-
         pieChart.setData(pieData);
         pieChart.invalidate(); // refresh
 
 
 
-
-
-
-
-
-
-
-        //Getting the instance of Spinner and applying OnItemSelectedListener on it
-        Spinner spin = (Spinner) findViewById(R.id.macroSpinner);
-        spin.setOnItemSelectedListener(this);
-
-        //Creating the ArrayAdapter instance having the country list
-        ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,macros);
-        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        //Setting the ArrayAdapter data on the Spinner
-        spin.setAdapter(aa);
-
-
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//        fragmentTransaction.add(R.id.piechartFragment, barchartAnalysis.getInstance(date)).commit();
 
 
 
     }
 
 
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
-        Toast.makeText(getApplicationContext(),macros[position] , Toast.LENGTH_LONG).show();
+
+    public void loadMacroProgress(){
+
+        int dProtein, dFat, dCarbs, dFibre, dCalorie;
+        int proteinPercent , fatPercent, carbsPercent, fibrePercent, caloriePercent;
+
+        SharedPreferences sp = getSharedPreferences("UserDetails", MODE_PRIVATE);
+        dCalorie = sp.getInt("calorie", 0);
+        dProtein = (int) Double.parseDouble(sp.getString("protein",""));
+        dCarbs = (int) Double.parseDouble(sp.getString("carbs", ""));
+        dFibre = (int) Double.parseDouble(sp.getString("fibre", ""));
+        dFat = (int) Double.parseDouble(sp.getString("fat", ""));
+
+
+        calorieProgressText.setText(calories + " of " + dCalorie + " cals");
+        proteinProgressText.setText((int)Math.round(protein) + "/" + dProtein + "g" );
+        fatProgressText.setText((int)Math.round(fat) + "/" + dFat + "g");
+        fibreProgressText.setText((int)Math.round(fibre) + "/" + dFibre + "g");
+        carbsProgressText.setText((int)Math.round(carbs) + "/"+ dCarbs + "g");
+
+        caloriePercent =  (int) (Double.parseDouble(calories+"") / dCalorie * 100);
+        proteinPercent = (int) (protein/dProtein* 100);
+        fatPercent = (int)(fat/dFat * 100);
+        fibrePercent = (int)(fibre/dFibre * 100);
+        carbsPercent = (int)(carbs/dCarbs* 100);
+
+
+        calorieProgressPercentage.setText(caloriePercent+ "%");
+        proteinProgressPercentage.setText(proteinPercent + "%");
+        fatProgressPercentage.setText( fatPercent + "%");
+        fibreProgressPercentage.setText(fibrePercent + "%");
+        carbsProgressPercentage.setText(carbsPercent + "%");
+
+
+
+
+        proteinProgressBar.setProgress(proteinPercent, true);
+        fatProgressBar.setProgress(fatPercent, true);
+        fibreProgressBar.setProgress(fibrePercent, true);
+        carbsProgressBar.setProgress(carbsPercent, true);
+
+
+
+        //setting color to progressbar depending upon its progress
+        proteinProgressBar.setProgressTintList(getProgressColor(proteinProgressBar.getProgress()));
+        fatProgressBar.setProgressTintList(getProgressColor(fatProgressBar.getProgress()));
+        fibreProgressBar.setProgressTintList(getProgressColor(fibreProgressBar.getProgress()));
+        carbsProgressBar.setProgressTintList(getProgressColor(carbsProgressBar.getProgress()));
+
+
+
     }
-    @Override
-    public void onNothingSelected(AdapterView<?> arg0) {
-        // TODO Auto-generated method stub
+
+    public ColorStateList getProgressColor(int progress){
+        Toast.makeText(this, "" + progress, Toast.LENGTH_SHORT).show();
+        if(progress > 120)
+            return ColorStateList.valueOf(Color.rgb(255, 68, 51));
+        else if(progress > 90)
+            return ColorStateList.valueOf(Color.rgb(236, 88, 0));
+        else if(progress > 80)
+            return ColorStateList.valueOf(Color.rgb(0, 163, 108));
+        else if(progress > 40)
+            return ColorStateList.valueOf(Color.rgb(255, 191, 0));
+        else
+            return ColorStateList.valueOf(Color.rgb(253, 218, 13    ));
     }
 
 
-    private List<BarEntry> getMacroEntries() {
-        ArrayList<BarEntry> macroEntries = new ArrayList<>();
+    public void loadMacrosData(){
 
-        macroEntries.add(new BarEntry(0, 11300));
-        macroEntries.add(new BarEntry(1, 1390));
-        macroEntries.add(new BarEntry(2, 1190));
-        macroEntries.add(new BarEntry(3, 7200));
-        macroEntries.add(new BarEntry(4, 4790));
-        macroEntries.add(new BarEntry(5, 4500));
-        macroEntries.add(new BarEntry(6, 8000));
+        JSONObject foodDetail;
+        try {
 
 
-        return macroEntries;
+            //opening food detail file
+            InputStream iStream = getAssets().open("food.json");
+            int size = iStream.available();
+            byte[] buffer =  new byte[size];
+            iStream.read(buffer);
+            String  json = new String(buffer, "UTF-8");
+            foodDetail = new JSONObject(json);
+
+            SharedPreferences sp = getSharedPreferences("FoodLog", MODE_PRIVATE);
+            if(!sp.contains(date)) return ;
+
+            JSONObject dayLog = new JSONObject(sp.getString(date, ""));
+
+
+            if(dayLog.has(calorie.timing.BREAKFAST.toString())) {
+
+                JSONObject breakfast = dayLog.getJSONObject(calorie.timing.BREAKFAST.toString());
+                Iterator<String> keys = breakfast.keys();
+
+                while (keys.hasNext()) {
+                    String key = keys.next();
+                    JSONObject item = breakfast.getJSONObject(key);
+                    calories +=  foodDetail.getJSONObject(key).getDouble("calorie") * (int) item.get("quantity") ;
+                    protein +=  foodDetail.getJSONObject(key).getDouble("protein") * (int) item.get("quantity") ;
+                    fat +=  foodDetail.getJSONObject(key).getDouble("fat") * (int) item.get("quantity") ;
+                    fibre +=  foodDetail.getJSONObject(key).getDouble("fibre") * (int) item.get("quantity") ;
+                    carbs +=  foodDetail.getJSONObject(key).getDouble("carb") * (int) item.get("quantity") ;
+                }
+
+
+
+            }
+
+            if(dayLog.has(calorie.timing.MORNING_SNACK.toString())){
+
+                JSONObject morningSnack = dayLog.getJSONObject(calorie.timing.MORNING_SNACK.toString());
+                Iterator<String> keys = morningSnack.keys();
+                while (keys.hasNext()) {
+                    String key = keys.next();
+                    JSONObject item = morningSnack.getJSONObject(key);
+                    calories +=  foodDetail.getJSONObject(key).getDouble("calorie") * (int) item.get("quantity") ;
+                    protein +=  foodDetail.getJSONObject(key).getDouble("protein") * (int) item.get("quantity") ;
+                    fat +=  foodDetail.getJSONObject(key).getDouble("fat") * (int) item.get("quantity") ;
+                    fibre +=  foodDetail.getJSONObject(key).getDouble("fibre") * (int) item.get("quantity") ;
+                    carbs +=  foodDetail.getJSONObject(key).getDouble("carb") * (int) item.get("quantity") ;
+                }
+
+            }
+            if(dayLog.has(calorie.timing.LUNCH.toString())){
+
+                JSONObject lunch = dayLog.getJSONObject(calorie.timing.LUNCH.toString());
+                Iterator<String> keys = lunch.keys();
+                while (keys.hasNext()) {
+                    String key = keys.next();
+                    JSONObject item = lunch.getJSONObject(key);
+                    calories +=  foodDetail.getJSONObject(key).getDouble("calorie") * (int) item.get("quantity") ;
+                    protein +=  foodDetail.getJSONObject(key).getDouble("protein") * (int) item.get("quantity") ;
+                    fat +=  foodDetail.getJSONObject(key).getDouble("fat") * (int) item.get("quantity") ;
+                    fibre +=  foodDetail.getJSONObject(key).getDouble("fibre") * (int) item.get("quantity") ;
+                    carbs +=  foodDetail.getJSONObject(key).getDouble("carb") * (int) item.get("quantity") ;
+                }
+
+            }
+            if(dayLog.has(calorie.timing.EVENING_SNACK.toString())){
+
+                JSONObject eveningSnack = dayLog.getJSONObject(calorie.timing.EVENING_SNACK.toString());
+                Iterator<String> keys = eveningSnack.keys();
+                while (keys.hasNext()) {
+                    String key = keys.next();
+                    JSONObject item = eveningSnack.getJSONObject(key);
+                    calories +=  foodDetail.getJSONObject(key).getDouble("calorie") * (int) item.get("quantity") ;
+                    protein +=  foodDetail.getJSONObject(key).getDouble("protein") * (int) item.get("quantity") ;
+                    fat +=  foodDetail.getJSONObject(key).getDouble("fat") * (int) item.get("quantity") ;
+                    fibre +=  foodDetail.getJSONObject(key).getDouble("fibre") * (int) item.get("quantity") ;
+                    carbs +=  foodDetail.getJSONObject(key).getDouble("carb") * (int) item.get("quantity") ;
+
+                }
+            }
+            if(dayLog.has(calorie.timing.DINNER.toString())){
+                JSONObject dinner = dayLog.getJSONObject(calorie.timing.DINNER.toString());
+                Iterator<String> keys = dinner.keys();
+                while (keys.hasNext()) {
+                    String key = keys.next();
+                    JSONObject item = dinner.getJSONObject(key);
+                    calories +=  foodDetail.getJSONObject(key).getDouble("calorie") * (int) item.get("quantity") ;
+                    protein +=  foodDetail.getJSONObject(key).getDouble("protein") * (int) item.get("quantity") ;
+                    fat +=  foodDetail.getJSONObject(key).getDouble("fat") * (int) item.get("quantity") ;
+                    fibre +=  foodDetail.getJSONObject(key).getDouble("fibre") * (int) item.get("quantity") ;
+                    carbs +=  foodDetail.getJSONObject(key).getDouble("carb") * (int) item.get("quantity") ;
+                }
+
+            }
+
+        }catch (Exception e){
+            Toast.makeText(this  , "date loaded", Toast.LENGTH_SHORT).show();
+
+        }
+
+
+
     }
+
 
 
 }
