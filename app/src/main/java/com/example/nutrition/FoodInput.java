@@ -48,6 +48,8 @@ public class FoodInput extends AppCompatActivity {
     TextView fibrePlaceholder;
     TextView carbPlcaeholder;
     String unitAccrom;
+    int totalUnits;
+
 
 
     @SuppressLint("MissingInflatedId")
@@ -85,7 +87,7 @@ public class FoodInput extends AppCompatActivity {
             public void onValueChange(NumberPicker numberPicker, int oldValue, int newValue) {
 
                 caloriePlaceholder.setText(
-                        newValue * 100 + unitAccrom + "\t" +  String.format("%.1f",  foodCalorieValue * newValue) + " cals");
+                        newValue * totalUnits + unitAccrom + "\t" +  String.format("%.1f",  foodCalorieValue * newValue) + " cals");
                 carbPlcaeholder.setText(String.format( "%.1f",foodCarbValue * newValue) + "g");
                 proteinPlaceholder.setText(String.format( "%.1f",foodProtienValue * newValue) + "g");
                 fibrePlaceholder.setText(String.format( "%.1f",foodFibreValue * newValue) + "g");
@@ -138,10 +140,20 @@ public class FoodInput extends AppCompatActivity {
             foodCarbValue = item.getDouble("carb");
             foodFibreValue  = item.getDouble("fibre");
             unit = item.getString("unit");
-
-            unitAccrom = (unit.contains("g"))? "g" : "ml" ;
+            if(unit.contains("ml")) {
+                unitAccrom = "ml";
+                totalUnits = 100;
+            }
+            else if(unit.contains("g")) {
+                unitAccrom = "g";
+                totalUnits = 100;
+            }
+            else {
+                unitAccrom = " peice    ";
+                totalUnits = 1;
+            }
             caloriePlaceholder.setText(
-                      100 + unitAccrom + "\t" +  String.format("%.1f",  foodCalorieValue) + " cals");
+                      totalUnits + unitAccrom + "\t" +  String.format("%.1f",  foodCalorieValue) + " cals");
 
             proteinPlaceholder.setText(foodProtienValue.toString());
             fatPlaceholder.setText(foodFatValue.toString());

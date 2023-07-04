@@ -117,6 +117,7 @@ public class GoalTime extends AppCompatActivity {
                 i.putExtra("timeperiod", weeks);
                 i.putExtra("calorie", perDayCalorie);
                 i.putExtra("goal", weightGoal);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(i);
             }
         });

@@ -30,8 +30,8 @@ public class NotificationReceiver extends BroadcastReceiver {
 
 
         String CHANNEL_ID = "Channel_id";
-        int NOTIFICATION_ID = 12;
-        int NOTIFICATIONID=13;
+        int[] NOTIFICATION_ID = {1,2,3,4,5};
+        int notificationIdIndex=0;
         private Context mContext;
         private static final String NOTIFICATION_CHANNEL_ID = "10001";
 
@@ -51,16 +51,21 @@ public class NotificationReceiver extends BroadcastReceiver {
             int time = calendar.get(Calendar.HOUR_OF_DAY); // gets hour in 24h format
             if(time < 10) {
                 notificationDescription = "☀️ Its time to start your day with a healthy breakfast. Log your breakfast details now!";
+                notificationIdIndex = 0;
             }else if(time < 12){
+                notificationIdIndex = 1;
                 notificationDescription = " \uD83C\uDF6A Its time to grab a quick snack to keep your day going! Log your snack details now!";
             }else if(time < 2 ){
+                notificationIdIndex = 2;
                 notificationDescription = "\uD83C\uDF71 Its time to have a delightful, healthy lunch. Log your lunch details now!";
             }else if(time < 6){
+                notificationIdIndex =3;
                 notificationDescription = "\uD83E\uDD64 Grab a quick healthy evening snack. Log your snack details now!";
             }
-            else
+            else {
+                notificationIdIndex = 4;
                 notificationDescription = "\uD83C\uDF57 Time for the last meal of the day! Log your dinner details now!";
-
+            }
 
 
             Intent intent = new Intent(mContext, calorie.class);
@@ -77,7 +82,7 @@ public class NotificationReceiver extends BroadcastReceiver {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 CharSequence name = mContext.getString(R.string.app_name);
                 String description = mContext.getString(R.string.tab_text_1);
-                int importance = NotificationManager.IMPORTANCE_MAX;
+                int importance = NotificationManager.IMPORTANCE_HIGH;
                 NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, importance);
                 channel.setDescription(description);
                 NotificationManager notificationManager = mContext.getSystemService(NotificationManager.class);
@@ -85,16 +90,9 @@ public class NotificationReceiver extends BroadcastReceiver {
             }
             NotificationManagerCompat notificationManager = NotificationManagerCompat.from(mContext);
             if (ActivityCompat.checkSelfPermission(mContext, android.Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-                // TODO: Consider calling
-                //    ActivityCompat#requestPermissions
-                // here to request the missing permissions, and then overriding
-                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                //                                          int[] grantResults)
-                // to handle the case where the user grants the permission. See the documentation
-                // for ActivityCompat#requestPermissions for more details.
                 return;
             }
-            notificationManager.notify(NOTIFICATION_ID, builder.build());
+            notificationManager.notify(NOTIFICATION_ID[notificationIdIndex], builder.build());
 
 
         }

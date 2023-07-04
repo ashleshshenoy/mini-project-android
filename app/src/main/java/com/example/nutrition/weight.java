@@ -1,16 +1,25 @@
 package com.example.nutrition;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.service.quicksettings.Tile;
+import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewOutlineProvider;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -63,6 +72,7 @@ public class weight extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_weight);
         editGoalButton = (ImageButton) findViewById(R.id.editGoalButton);
         weightLineChart = (LineChart) findViewById(R.id.weightLineChart);
@@ -82,6 +92,7 @@ public class weight extends AppCompatActivity {
 
 
         List<Entry> val = entries;
+
         LineDataSet dataSet = new LineDataSet(val, "weight (in kg)");
         dataSet.setCircleColor(Color.parseColor("purple"));
         dataSet.setFillColor(Color.parseColor("purple"));
@@ -95,7 +106,7 @@ public class weight extends AppCompatActivity {
         weightLineChart.getXAxis().setValueFormatter(new com.github.mikephil.charting.formatter.IndexAxisValueFormatter(xAxisValues));
         LineData data = new LineData(dataSets);
 
-        weightLineChart.setScaleEnabled(false);
+        weightLineChart.setScaleEnabled(true);
         weightLineChart.setDrawGridBackground(false);
         weightLineChart.setExtraLeftOffset(15);
         weightLineChart.setExtraRightOffset(15);
@@ -105,7 +116,22 @@ public class weight extends AppCompatActivity {
         YAxis rightYAxis = weightLineChart.getAxisRight();
         rightYAxis.setEnabled(false);
         YAxis leftYAxis = weightLineChart.getAxisLeft();
+        int targetWeight = sh.getInt("targetWeight",0);
+        LimitLine ll1 = new LimitLine(targetWeight, "Goal");
+        ll1.setLineWidth(2f);
+        ll1.setLineColor(R.color.grey);
+        ll1.enableDashedLine(15f, 15f, 0f);
+        ll1.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT_TOP);
+        ll1.setTextSize(8f);
+        leftYAxis.removeAllLimitLines(); // reset all limit lines to avoid overlapping lines
+        leftYAxis.addLimitLine(ll1);
+        leftYAxis.setAxisMaximum(Math.max(targetWeight + 5, dataSet.getYMax() + 5));
+        leftYAxis.setAxisMinimum(Math.min(targetWeight - 5, dataSet.getYMin() - 5));
         leftYAxis.setEnabled(true);
+
+
+
+
 
         XAxis bottomXAxis = weightLineChart.getXAxis();
         bottomXAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
@@ -116,6 +142,7 @@ public class weight extends AppCompatActivity {
         weightLineChart.getDescription().setEnabled(false);
         weightLineChart.setData(data);
         weightLineChart.invalidate();
+
         weightLineChart.setVisibleXRangeMaximum(4);
         weightLineChart.invalidate();
 
@@ -145,13 +172,23 @@ public class weight extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
     public void loadData(){
         int week = Integer.parseInt(sh.getString("timeperiod", ""));
         Date startDate;
         startDate = new Date(sh.getString("startdate", ""));
         Double weight = (double) sh.getFloat("weight", 0);
 
-        Toast.makeText(this, "" + weight, Toast.LENGTH_SHORT).show();
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(startDate);
         calendar.add(Calendar.WEEK_OF_YEAR,  week);
@@ -177,9 +214,9 @@ public class weight extends AppCompatActivity {
             Toast.makeText(this, "set goal", Toast.LENGTH_SHORT).show();
         }
 
-        weightProgressIndicator.setProgress((int)((progress/goal) * 100), true);
-        if(progress < goal)
-            weightProgressText.setText(progress + " of "+ goal + " kg");
+        weightProgressIndicator.setProgress((int)((progress/Math.abs(goal)) * 100), true);
+        if(progress < Math.abs(goal))
+            weightProgressText.setText(String.format("%.1f", progress) + " of "+ Math.abs(goal) + " kg");
         else
             weightProgressText.setText("Set new goal \uD83C\uDFAF");
 
@@ -190,11 +227,6 @@ public class weight extends AppCompatActivity {
     void loadWeightlog(){
         String weightLog = s.getString("log", "");
         try {
-            if (weightLog.contentEquals("")) {
-                TextView txt = new TextView(weight.this);
-                txt.setText("none");
-                weightLogContainer.addView(txt);
-            } else {
                 JSONArray weightLogObj = new JSONArray(weightLog);
                 for (int i = 0 ; i < weightLogObj.length(); i++) {
 
@@ -207,7 +239,7 @@ public class weight extends AppCompatActivity {
                     // log tiles
                     LinearLayout ll = new LinearLayout(weight.this);
                     ll.setOrientation(LinearLayout.VERTICAL);
-                    ll.setPadding(50,50,50,50);
+                    ll.setPadding(60,70,60,100);
                     ll.setElevation(10);
                     ll.setBackgroundColor(Color.parseColor("#FFFFFF"));
                     TextView dateTxt = new TextView(weight.this);
@@ -224,8 +256,20 @@ public class weight extends AppCompatActivity {
 
                     ll.addView(weightTxt);
                     ll.addView(dateTxt);
+                    LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
+                            LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                    layoutParams.setMargins(30, 40, 40, 20);
+
+                    ll.setOutlineProvider(ViewOutlineProvider.BOUNDS);
+                    ll.setBackgroundColor(Color.parseColor("white"));
+
+                    CardView cv = new CardView(weight.this);
+                    cv.addView(ll);
+                    cv.setRadius(30);
+                    ll.setElevation(2);
+
                     int finalI = i;
-                    ll.setOnClickListener(new View.OnClickListener() {
+                    cv.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
                             Intent it = new Intent(weight.this, AddWeightLog.class);
@@ -239,11 +283,11 @@ public class weight extends AppCompatActivity {
                         }
                     });
 
-                    weightLogContainer.addView(ll, 0);
+                    weightLogContainer.addView(cv, 0, layoutParams);
 
                 }
 
-            }
+
         }
         catch (Exception e){
 
@@ -251,6 +295,7 @@ public class weight extends AppCompatActivity {
 
 
     }
+
 
 
 

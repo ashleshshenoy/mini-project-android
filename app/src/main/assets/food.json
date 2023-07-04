@@ -1745,5 +1745,2990 @@
     "fibre": 1,
     "fat": 8,
     "unit": "g"
+  },
+  "Maggi Noodles": {
+    "carb": 60,
+    "protein": 10,
+    "calorie": 350,
+    "fibre": 3,
+    "fat": 15,
+    "unit": "g"
+  },
+  "Parle-G Biscuits": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Lays Potato Chips": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kurkure": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Britannia Marie Gold Biscuits": {
+    "carb": 10,
+    "protein": 2,
+    "calorie": 60,
+    "fibre": 1,
+    "fat": 3,
+    "unit": "g"
+  },
+  "Haldiram's Aloo Bhujia": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Sunfeast Yippee Noodles": {
+    "carb": 50,
+    "protein": 8,
+    "calorie": 320,
+    "fibre": 2,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Parle Hide & Seek Biscuits": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Bingo! Mad Angles": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Amul Cheese Slices": {
+    "carb": 2,
+    "protein": 4,
+    "calorie": 50,
+    "fibre": 0,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Bisleri Mineral Water": {
+    "carb": 0,
+    "protein": 0,
+    "calorie": 0,
+    "fibre": 0,
+    "fat": 0,
+    "unit": "ml"
+  },
+  "Nestle KitKat": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 110,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Cadbury Dairy Milk": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kissan MixedFruit Jam": {
+    "carb": 15,
+    "protein": 0,
+    "calorie": 60,
+    "fibre": 0,
+    "fat": 0,
+    "unit": "g"
+  },
+  "Parle Monaco Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 90,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Poha": {
+    "carb": 30,
+    "protein": 5,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Saffola Masala Oats": {
+    "carb": 25,
+    "protein": 4,
+    "calorie": 150,
+    "fibre": 4,
+    "fat": 3,
+    "unit": "g"
+  },
+  "Cadbury 5 Star": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Britannia Good Day Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Parle Krackjack Biscuits": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Sunfeast Dark Fantasy Choco Fills": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Lotte Choco Pie": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Parle Kismi Toffee": {
+    "carb": 15,
+    "protein": 0,
+    "calorie": 80,
+    "fibre": 0,
+    "fat": 3,
+    "unit": "g"
+  },
+  "Lipton Green Tea": {
+    "carb": 0,
+    "protein": 0,
+    "calorie": 0,
+    "fibre": 0,
+    "fat": 0,
+    "unit": "ml"
+  },
+  "Kurkure Masala Munch": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Nescafe Instant Coffee": {
+    "carb": 0,
+    "protein": 1,
+    "calorie": 5,
+    "fibre": 0,
+    "fat": 0,
+    "unit": "g"
+  },
+  "Britannia Bourbon Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 90,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Parle Milano Biscuits": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Haldiram's Soan Papdi": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Upma": {
+    "carb": 30,
+    "protein": 5,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Bikaji Bhujia": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Nestle Maggi Masala": {
+    "carb": 50,
+    "protein": 10,
+    "calorie": 350,
+    "fibre": 3,
+    "fat": 15,
+    "unit": "g"
+  },
+  "Parle Rusk": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 90,
+    "fibre": 1,
+    "fat": 3,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Pongal": {
+    "carb": 35,
+    "protein": 5,
+    "calorie": 220,
+    "fibre": 3,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Haldiram's Namkeen": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Amul Butter": {
+    "carb": 0,
+    "protein": 0,
+    "calorie": 100,
+    "fibre": 0,
+    "fat": 11,
+    "unit": "g"
+  },
+  "Cadbury Perk": {
+    "carb": 15,
+    "protein": 1,
+    "calorie": 80,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Britannia Tiger Biscuits": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 110,
+    "fibre": 1,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Parle 20-20 Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 90,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Haldiram's All in One Namkeen": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Bisleri Soda": {
+    "carb": 0,
+    "protein": 0,
+    "calorie": 0,
+    "fibre": 0,
+    "fat": 0,
+    "unit": "ml"
+  },
+  "Nestle Milkybar": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Cadbury Gems": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 110,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Sunfeast Mom's Magic Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Parle Melody Toffee": {
+    "carb": 15,
+    "protein": 0,
+    "calorie": 80,
+    "fibre": 0,
+    "fat": 3,
+    "unit": "g"
+  },
+  "Bru Instant Coffee": {
+    "carb": 0,
+    "protein": 0,
+    "calorie": 5,
+    "fibre": 0,
+    "fat": 0,
+    "unit": "g"
+  },
+  "Bingo! Tedhe Medhe": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Nescafe Classic Coffee": {
+    "carb": 0,
+    "protein": 1,
+    "calorie": 5,
+    "fibre": 0,
+    "fat": 0,
+    "unit": "g"
+  },
+  "Britannia NutriChoice Digestive Biscuits": {
+    "carb": 10,
+    "protein": 2,
+    "calorie": 60,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Parle Marie Biscuits": {
+    "carb": 10,
+    "protein": 2,
+    "calorie": 60,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Lotte Eclairs": {
+    "carb": 15,
+    "protein": 1,
+    "calorie": 80,
+    "fibre": 0,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Parle Kacha Mango Bite": {
+    "carb": 20,
+    "protein": 0,
+    "calorie": 100,
+    "fibre": 0,
+    "fat": 0,
+    "unit": "g"
+  },
+  "Kurkure Solid Masti": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Amul Chocolate": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Britannia Cheese Slices": {
+    "carb": 2,
+    "protein": 4,
+    "calorie": 50,
+    "fibre": 0,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Cadbury Silk": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Maggi Hot & Sweet Sauce": {
+    "carb": 15,
+    "protein": 0,
+    "calorie": 70,
+    "fibre": 0,
+    "fat": 0,
+    "unit": "g"
+  },
+  "Parle Frooti Toffee": {
+    "carb": 15,
+    "protein": 0,
+    "calorie": 80,
+    "fibre": 0,
+    "fat": 3,
+    "unit": "g"
+  },
+  "Lipton Ice Tea": {
+    "carb": 0,
+    "protein": 0,
+    "calorie": 0,
+    "fibre": 0,
+    "fat": 0,
+    "unit": "ml"
+  },
+  "Bisleri Limonata": {
+    "carb": 10,
+    "protein": 0,
+    "calorie": 40,
+    "fibre": 0,
+    "fat": 0,
+    "unit": "ml"
+  },
+  "Nestle Bar-One": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 110,
+    "fibre": 1,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Amul Cheese Slices": {
+    "carb": 1,
+    "protein": 4,
+    "calorie": 40,
+    "fibre": 0,
+    "fat": 3,
+    "unit": "g"
+  },
+  "Lays Potato Chips": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 9,
+    "unit": "g"
+  },
+  "Parle-G Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 80,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Bikano Aloo Bhujia": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 9,
+    "unit": "g"
+  },
+  "Maggi Tomato Ketchup": {
+    "carb": 10,
+    "protein": 1,
+    "calorie": 50,
+    "fibre": 0,
+    "fat": 0,
+    "unit": "g"
+  },
+  "Britannia Bourbon Biscuits": {
+    "carb": 12,
+    "protein": 1,
+    "calorie": 60,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Parle Monaco Biscuits": {
+    "carb": 10,
+    "protein": 1,
+    "calorie": 60,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Haldiram's Moong Dal": {
+    "carb": 20,
+    "protein": 6,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 9,
+    "unit": "g"
+  },
+  "Nestle Kit Kat": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Bingo! Mad Angles": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 140,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Amul Kool Milk Shake": {
+    "carb": 20,
+    "protein": 3,
+    "calorie": 120,
+    "fibre": 0,
+    "fat": 5,
+    "unit": "ml"
+  },
+  "Parle Krack Jack Biscuits": {
+    "carb": 15,
+    "protein": 1,
+    "calorie": 90,
+    "fibre": 1,
+    "fat": 3,
+    "unit": "g"
+  },
+  "Britannia Good Day Biscuits": {
+    "carb": 12,
+    "protein": 1,
+    "calorie": 70,
+    "fibre": 1,
+    "fat": 3,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Paneer Tikka": {
+    "carb": 15,
+    "protein": 8,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Nestle Munch": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Haldiram's Khatta Meetha Mixture": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Maggi Hot Heads Noodles": {
+    "carb": 60,
+    "protein": 8,
+    "calorie": 350,
+    "fibre": 4,
+    "fat": 16,
+    "unit": "g"
+  },
+  "Parle Monaco Cheeslings": {
+    "carb": 10,
+    "protein": 1,
+    "calorie": 60,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Haldiram's Navratan Mix": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Maggi Pazzta": {
+    "carb": 45,
+    "protein": 8,
+    "calorie": 320,
+    "fibre": 2,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Britannia Marie Gold Biscuits": {
+    "carb": 12,
+    "protein": 1,
+    "calorie": 70,
+    "fibre": 1,
+    "fat": 3,
+    "unit": "g"
+  },
+  "Parle Milano Choco Delight Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Bikano Bhel Puri": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Maggi Vegetable Atta Noodles": {
+    "carb": 60,
+    "protein": 8,
+    "calorie": 350,
+    "fibre": 4,
+    "fat": 16,
+    "unit": "g"
+  },
+  "Parle 20-20 Cashew Butter Cookies": {
+    "carb": 12,
+    "protein": 1,
+    "calorie": 70,
+    "fibre": 1,
+    "fat": 3,
+    "unit": "g"
+  },
+  "Haldiram's Tasty Nuts": {
+    "carb": 20,
+    "protein": 5,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Nestle Milkybar Choo": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Britannia Treat Jim Jam Biscuits": {
+    "carb": 15,
+    "protein": 1,
+    "calorie": 80,
+    "fibre": 1,
+    "fat": 3,
+    "unit": "g"
+  },
+  "Parle Milano Classic Crème Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 90,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Bingo! Tedhe Medhe": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 140,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Amul Kool Thandai": {
+    "carb": 20,
+    "protein": 3,
+    "calorie": 130,
+    "fibre": 0,
+    "fat": 5,
+    "unit": "ml"
+  },
+  "Parle Hide & Seek Milano": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Britannia Little Hearts Biscuits": {
+    "carb": 12,
+    "protein": 1,
+    "calorie": 60,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Poha": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Nestle Milkybar": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 170,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Haldiram's Kaju Mixture": {
+    "carb": 20,
+    "protein": 6,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Maggi Nutri-Licious Oats Noodles": {
+    "carb": 45,
+    "protein": 8,
+    "calorie": 320,
+    "fibre": 2,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Parle Hide & Seek Fab Chocolate Chip Cookies": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Britannia Nice Time Biscuits": {
+    "carb": 12,
+    "protein": 1,
+    "calorie": 60,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Haldiram's Chana Dal": {
+    "carb": 20,
+    "protein": 6,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 9,
+    "unit": "g"
+  },
+  "Nestle Munch Nuts": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Parle Namkeen Bhujia": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Amul Masti Spiced Buttermilk": {
+    "carb": 5,
+    "protein": 2,
+    "calorie": 30,
+    "fibre": 0,
+    "fat": 1,
+    "unit": "ml"
+  },
+  "Britannia 50-50 Maska Chaska": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 90,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Upma": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Nestle Kit Kat Dessert Delight": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Parle Hide & Seek Black Bourbon Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Haldiram's Moong Dal Namkeen": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Maggi Cuppa Noodles": {
+    "carb": 55,
+    "protein": 7,
+    "calorie": 320,
+    "fibre": 2,
+    "fat": 14,
+    "unit": "g"
+  },
+  "Parle Rusk": {
+    "carb": 15,
+    "protein": 1,
+    "calorie": 80,
+    "fibre": 1,
+    "fat": 1,
+    "unit": "g"
+  },
+  "Britannia Milk Rusk": {
+    "carb": 15,
+    "protein": 1,
+    "calorie": 90,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Masala Dosa": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Nestle Milkybar Moosha": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Haldiram's Aloo Bhujia": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 9,
+    "unit": "g"
+  },
+  "Maggi Fusian Hong Kong Spicy Garlic Noodles": {
+    "carb": 50,
+    "protein": 8,
+    "calorie": 320,
+    "fibre": 3,
+    "fat": 11,
+    "unit": "g"
+  },
+  "Parle-G Gold Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 80,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Britannia Pure Magic Chocolush": {
+    "carb": 15,
+    "protein": 1,
+    "calorie": 90,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Sambar Rice": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Nestle Bar One": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Haldiram's Masala Chana": {
+    "carb": 20,
+    "protein": 6,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Maggi Hot Heads Barbeque Pepper Noodles": {
+    "carb": 60,
+    "protein": 8,
+    "calorie": 350,
+    "fibre": 4,
+    "fat": 16,
+    "unit": "g"
+  },
+  "Parle Monaco Cheeselings 7 Grain": {
+    "carb": 10,
+    "protein": 1,
+    "calorie": 60,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Britannia Good Day Chunkies": {
+    "carb": 15,
+    "protein": 1,
+    "calorie": 80,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Vegetable Pulao": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Nestle Milkybar Moosha Pop": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Haldiram's Kaju Pista Cookies": {
+    "carb": 15,
+    "protein": 3,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Maggi 2-Minute Special Masala Noodles": {
+    "carb": 52,
+    "protein": 8,
+    "calorie": 320,
+    "fibre": 3,
+    "fat": 11,
+    "unit": "g"
+  },
+  "Parle Namkeen Ratlami Sev": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Amul Kool Kesar Flavored Milk": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 0,
+    "fat": 2,
+    "unit": "ml"
+  },
+  "Britannia 50-50 Sweet & Salty": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 90,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Paneer Tikka": {
+    "carb": 15,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Nestle Munch Nuts Chocolate Coated": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Parle Namkeen Lite Chiwda": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Amul Lassi": {
+    "carb": 15,
+    "protein": 3,
+    "calorie": 90,
+    "fibre": 0,
+    "fat": 4,
+    "unit": "ml"
+  },
+  "Britannia Good Day Pista Badam Cookies": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Lemon Rice": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Nestle Milkybar Moosha Biscuit": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Haldiram's Punjabi Tadka": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Maggi 2-Minute Curry Noodles": {
+    "carb": 55,
+    "protein": 7,
+    "calorie": 330,
+    "fibre": 2,
+    "fat": 14,
+    "unit": "g"
+  },
+  "Parle Namkeen Khatta Meetha": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Amul Buttermilk": {
+    "carb": 4,
+    "protein": 2,
+    "calorie": 25,
+    "fibre": 0,
+    "fat": 1,
+    "unit": "ml"
+  },
+  "Britannia Bourbon Biscuits": {
+    "carb": 15,
+    "protein": 1,
+    "calorie": 80,
+    "fibre": 1,
+    "fat": 3,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Chole Bhature": {
+    "carb": 25,
+    "protein": 6,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Nestle Munch": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Parle Namkeen Aloo Bhujia": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 150,
+    "fibre": 2,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Amul Masti Spiced Buttermilk Bottle": {
+    "carb": 5,
+    "protein": 2,
+    "calorie": 30,
+    "fibre": 0,
+    "fat": 1,
+    "unit": "ml"
+  },
+  "Britannia Milk Bikis Biscuits": {
+    "carb": 15,
+    "protein": 1,
+    "calorie": 70,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Vegetable Biryani": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Nestle Munch Pop Choco": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 140,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Haldiram's Soan Papdi": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 250,
+    "fibre": 1,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Maggi 2-Minute Atta Noodles": {
+    "carb": 48,
+    "protein": 8,
+    "calorie": 320,
+    "fibre": 3,
+    "fat": 11,
+    "unit": "g"
+  },
+  "Parle G Glucose Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 80,
+    "fibre": 1,
+    "fat": 3,
+    "unit": "g"
+  },
+  "Amul Kool Rose Flavored Milk": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 0,
+    "fat": 2,
+    "unit": "ml"
+  },
+  "Britannia Treat Jim Jam Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 90,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Poha": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Nestle Polo Mint": {
+    "carb": 3,
+    "protein": 0,
+    "calorie": 15,
+    "fibre": 0,
+    "fat": 0,
+    "unit": "g"
+  },
+  "Haldiram's Aloo Lachha": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Maggi Hot Heads Peri Peri Noodles": {
+    "carb": 60,
+    "protein": 8,
+    "calorie": 350,
+    "fibre": 4,
+    "fat": 16,
+    "unit": "g"
+  },
+  "Parle Hide & Seek Fab Choco Rolls": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Amul Shrikhand": {
+    "carb": 15,
+    "protein": 3,
+    "calorie": 100,
+    "fibre": 0,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Britannia Little Hearts Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 80,
+    "fibre": 1,
+    "fat": 3,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Pav Bhaji": {
+    "carb": 15,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Nestle Milkybar": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Haldiram's Cornflakes Mixture": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Maggi 2-Minute Vegetable Atta Noodles": {
+    "carb": 50,
+    "protein": 7,
+    "calorie": 330,
+    "fibre": 3,
+    "fat": 13,
+    "unit": "g"
+  },
+  "Parle Hide & Seek Black Bourbon": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Amul Cheese Slices": {
+    "carb": 1,
+    "protein": 5,
+    "calorie": 80,
+    "fibre": 0,
+    "fat": 6,
+    "unit": "slice"
+  },
+  "Britannia Marie Gold Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 80,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Upma": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Nestle KitKat": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 140,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Haldiram's Gulab Jamun": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Maggi 2-Minute Masala Noodles": {
+    "carb": 54,
+    "protein": 8,
+    "calorie": 330,
+    "fibre": 2,
+    "fat": 14,
+    "unit": "g"
+  },
+  "Parle Hide & Seek Milano": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Amul Cheese Spread": {
+    "carb": 1,
+    "protein": 5,
+    "calorie": 80,
+    "fibre": 0,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Britannia NutriChoice Digestive Biscuits": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 80,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Masala Khichdi": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Nestle Nestum Baby Cereal": {
+    "carb": 25,
+    "protein": 4,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Haldiram's Kaju Mixture": {
+    "carb": 25,
+    "protein": 4,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Maggi 2-Minute Tomato Noodles": {
+    "carb": 54,
+    "protein": 8,
+    "calorie": 330,
+    "fibre": 2,
+    "fat": 14,
+    "unit": "g"
+  },
+  "Parle Hide & Seek Treat": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Amul Chocolate Ice Cream": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 140,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "ml"
+  },
+  "Britannia Pure Magic Chocolush Cookies": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "MTR Ready-to-Eat Bisibele Bhath": {
+    "carb": 25,
+    "protein": 6,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Nestle Milkybar Chocolate": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 130,
+    "fibre": 1,
+    "fat": 7,
+    "unit": "g"
+  },
+  "Haldiram's Moong Dal": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Murukku": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Masala Vada": {
+    "carb": 15,
+    "protein": 4,
+    "calorie": 120,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Paniyaram": {
+    "carb": 20,
+    "protein": 3,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 5,
+    "unit": "piece"
+  },
+  "Bonda": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Vada Pav": {
+    "carb": 35,
+    "protein": 6,
+    "calorie": 250,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "piece"
+  },
+  "Appam": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "piece"
+  },
+  "Bhajji": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Idli Fry": {
+    "carb": 25,
+    "protein": 5,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Rava Dosa": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Mysore Bonda": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Onion Uttapam": {
+    "carb": 40,
+    "protein": 5,
+    "calorie": 280,
+    "fibre": 3,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Medu Vada": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Punugulu": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Masala Dosa": {
+    "carb": 50,
+    "protein": 7,
+    "calorie": 350,
+    "fibre": 4,
+    "fat": 16,
+    "unit": "piece"
+  },
+  "Rava Upma": {
+    "carb": 35,
+    "protein": 4,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Idli": {
+    "carb": 20,
+    "protein": 3,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "piece"
+  },
+  "Samosa": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Uthappam": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Pesarattu": {
+    "carb": 35,
+    "protein": 5,
+    "calorie": 250,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "piece"
+  },
+  "Bhel Puri": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kuzhi Paniyaram": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Ragi Dosa": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 220,
+    "fibre": 3,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Vada": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Rasam Vada": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Neer Dosa": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 240,
+    "fibre": 3,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Idli Sambar": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Bisi Bele Bath": {
+    "carb": 50,
+    "protein": 6,
+    "calorie": 320,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Dahi Vada": {
+    "carb": 30,
+    "protein": 5,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Masala Puri": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Akki Roti": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Puliyogare": {
+    "carb": 40,
+    "protein": 5,
+    "calorie": 260,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Coconut Chutney": {
+    "carb": 10,
+    "protein": 1,
+    "calorie": 60,
+    "fibre": 0.5,
+    "fat": 5,
+    "unit": "g"
+  },
+  "Onion Rava Dosa": {
+    "carb": 45,
+    "protein": 5,
+    "calorie": 300,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "piece"
+  },
+  "Pongal": {
+    "carb": 40,
+    "protein": 5,
+    "calorie": 260,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Set Dosa": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Mango Pickle": {
+    "carb": 5,
+    "protein": 0.5,
+    "calorie": 30,
+    "fibre": 1,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Coconut Rice": {
+    "carb": 40,
+    "protein": 3,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Ragi Mudde": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Avial": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Bhindi Masala": {
+    "carb": 20,
+    "protein": 3,
+    "calorie": 140,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Kara Kuzhambu": {
+    "carb": 25,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Coconut Burfi": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "piece"
+  },
+  "Ghee Roast Dosa": {
+    "carb": 50,
+    "protein": 6,
+    "calorie": 350,
+    "fibre": 3,
+    "fat": 16,
+    "unit": "piece"
+  },
+  "Chow Chow Bhath": {
+    "carb": 45,
+    "protein": 5,
+    "calorie": 290,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Pappu Pulusu": {
+    "carb": 25,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Curd Rice": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kesari Bath": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Paruppu Podi": {
+    "carb": 10,
+    "protein": 2,
+    "calorie": 60,
+    "fibre": 1,
+    "fat": 3,
+    "unit": "g"
+  },
+  "Puliyodarai": {
+    "carb": 40,
+    "protein": 3,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Pongal Vada": {
+    "carb": 40,
+    "protein": 6,
+    "calorie": 280,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "piece"
+  },
+  "Ragi Mudde with Soppu Saaru": {
+    "carb": 35,
+    "protein": 4,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Tomato Rice": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Puliyodarai with Coconut Chutney": {
+    "carb": 45,
+    "protein": 4,
+    "calorie": 280,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Vangi Bath": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 240,
+    "fibre": 3,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Curd Vada": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Pesarattu with Ginger Chutney": {
+    "carb": 35,
+    "protein": 5,
+    "calorie": 260,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "piece"
+  },
+  "Palak Paneer Dosa": {
+    "carb": 50,
+    "protein": 7,
+    "calorie": 320,
+    "fibre": 4,
+    "fat": 16,
+    "unit": "piece"
+  },
+  "Pav Bhaji": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 240,
+    "fibre": 3,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Vendakkai Poriyal": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Rasam": {
+    "carb": 10,
+    "protein": 1,
+    "calorie": 70,
+    "fibre": 0.5,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Kadala Curry": {
+    "carb": 20,
+    "protein": 4,
+    "calorie": 140,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Avocado Dosa": {
+    "carb": 45,
+    "protein": 5,
+    "calorie": 300,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "piece"
+  },
+  "Chana Masala Dosa": {
+    "carb": 50,
+    "protein": 6,
+    "calorie": 350,
+    "fibre": 4,
+    "fat": 16,
+    "unit": "piece"
+  },
+  "Vegetable Biryani": {
+    "carb": 50,
+    "protein": 4,
+    "calorie": 320,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Lemon Rice": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Paniyaram with Tomato Chutney": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Udupi Sambar": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Coconut Sevai": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Vegetable Cutlet": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Mysore Masala Dosa": {
+    "carb": 50,
+    "protein": 6,
+    "calorie": 350,
+    "fibre": 4,
+    "fat": 16,
+    "unit": "piece"
+  },
+  "Pineapple Sheera": {
+    "carb": 40,
+    "protein": 3,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Coconut Laddu": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "piece"
+  },
+  "Mysore Bonda": {
+    "carb": 35,
+    "protein": 4,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Carrot Halwa": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Aloo Tikki": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 140,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Coconut Milk Rice": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Goli Baje": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Semiya Upma": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Mango Rice": {
+    "carb": 35,
+    "protein": 2,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Medu Vada": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Coconut Chutney with Dosa": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Capsicum Rice": {
+    "carb": 35,
+    "protein": 2,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Bread Upma": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Samosa": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Coconut Burfi with Jaggery": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 160,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Vegetable Pulao": {
+    "carb": 40,
+    "protein": 3,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Cabbage Poriyal": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Rava Kesari": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Punugulu": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Vegetable Uttapam": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 260,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "piece"
+  },
+  "Sakkarai Pongal": {
+    "carb": 40,
+    "protein": 3,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Ginger Chutney": {
+    "carb": 10,
+    "protein": 1,
+    "calorie": 70,
+    "fibre": 0.5,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Neer Dosa": {
+    "carb": 40,
+    "protein": 3,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Curd Semiya": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Vegetable Poha": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 160,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Bread Pakora": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 140,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Coconut Milk Payasam": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Tomato Chutney": {
+    "carb": 10,
+    "protein": 1,
+    "calorie": 70,
+    "fibre": 0.5,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Paneer Dosa": {
+    "carb": 50,
+    "protein": 7,
+    "calorie": 320,
+    "fibre": 4,
+    "fat": 16,
+    "unit": "piece"
+  },
+  "Cucumber Raita": {
+    "carb": 10,
+    "protein": 1,
+    "calorie": 60,
+    "fibre": 0.5,
+    "fat": 2,
+    "unit": "g"
+  },
+  "Rava Upma": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Vegetable Bajji": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Onion Rava Dosa": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 260,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "piece"
+  },
+  "Aloo Bonda": {
+    "carb": 35,
+    "protein": 4,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Vegetable Korma": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Paniyaram with Coconut Chutney": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Ragi Dosa": {
+    "carb": 45,
+    "protein": 5,
+    "calorie": 300,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "piece"
+  },
+  "Potato Fry": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Curry Leaves Rice": {
+    "carb": 35,
+    "protein": 2,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Vermicelli Upma": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Rava Idli with Coconut Chutney": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 260,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "piece"
+  },
+  "Poha Upma": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Besan Chutney": {
+    "carb": 15,
+    "protein": 2,
+    "calorie": 100,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "g"
+  },
+  "Masala Vada": {
+    "carb": 25,
+    "protein": 4,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Ragi Mudde": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Spinach Rice": {
+    "carb": 35,
+    "protein": 2,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Curd Rice": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Veg Cutlet": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Mango Pachadi": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Pesarattu with Ginger Chutney": {
+    "carb": 35,
+    "protein": 4,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Cabbage Pakora": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Coconut Rice": {
+    "carb": 35,
+    "protein": 2,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Vegetable Kurma": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Idli Fry": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 140,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Veg Biryani": {
+    "carb": 45,
+    "protein": 5,
+    "calorie": 280,
+    "fibre": 3,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Curd Vada": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 200,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Coconut Chutney with Pesarattu": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Tamarind Rice": {
+    "carb": 40,
+    "protein": 2,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Spinach Pakora": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 160,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Ragi Malt": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Cucumber Rice": {
+    "carb": 35,
+    "protein": 2,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Pav Bhaji": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 260,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Mango Puri": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Bread Uttapam": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 2,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Coconut Burfi": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 160,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Mangalore Buns": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Goli Baje": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Maddur Vada": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Neer Dosa": {
+    "carb": 20,
+    "protein": 1,
+    "calorie": 120,
+    "fibre": 1,
+    "fat": 4,
+    "unit": "piece"
+  },
+  "Kane Rava Fry": {
+    "carb": 15,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "g"
+  },
+  "Pundi Gatti": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 160,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Kori Rotti": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 250,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "piece"
+  },
+  "Kori Gassi": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kotte Kadubu": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 280,
+    "fibre": 2,
+    "fat": 12,
+    "unit": "piece"
+  },
+  "Puliyogare": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 220,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kori Sukka": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Goli Bhajji": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Kundapur Chicken": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kotte Idli": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 140,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Kori Rava Fry": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Sannas": {
+    "carb": 35,
+    "protein": 2,
+    "calorie": 220,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "piece"
+  },
+  "Mangalorean Chicken Ghee Roast": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Anjal Tawa Fry": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Bisi Bele Bath": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 260,
+    "fibre": 3,
+    "fat": 12,
+    "unit": "g"
+  },
+  "Mangalorean Fish Curry": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Chicken Ghee Roast": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kori Roti": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kori Pulimunchi": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kori Ghee Roast": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Mangalorean Chicken Curry": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Pundi": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 160,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Chicken Sukka": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Mangalorean Fish Fry": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Chicken Pulimunchi": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Mangalorean Prawn Curry": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kundapur Chicken": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Chicken Biryani": {
+    "carb": 45,
+    "protein": 5,
+    "calorie": 280,
+    "fibre": 3,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Mangalorean Crab Curry": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kori Rava Fry": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kotte Kadubu": {
+    "carb": 40,
+    "protein": 4,
+    "calorie": 280,
+    "fibre": 2,
+    "fat": 12,
+    "unit": "piece"
+  },
+  "Puliyogare": {
+    "carb": 30,
+    "protein": 2,
+    "calorie": 220,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kori Sukka": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Goli Bhajji": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 150,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Kundapur Chicken": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kotte Idli": {
+    "carb": 20,
+    "protein": 2,
+    "calorie": 140,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Kori Roti": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kori Pulimunchi": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Kori Ghee Roast": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Mangalorean Chicken Curry": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Pundi": {
+    "carb": 25,
+    "protein": 2,
+    "calorie": 160,
+    "fibre": 1,
+    "fat": 6,
+    "unit": "piece"
+  },
+  "Chicken Sukka": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Mangalorean Fish Fry": {
+    "carb": 30,
+    "protein": 3,
+    "calorie": 200,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Chicken Pulimunchi": {
+    "carb": 25,
+    "protein": 3,
+    "calorie": 180,
+    "fibre": 1,
+    "fat": 8,
+    "unit": "g"
+  },
+  "Mangalorean Prawn Curry": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Kundapur Chicken": {
+    "carb": 30,
+    "protein": 4,
+    "calorie": 240,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Chicken Biryani": {
+    "carb": 45,
+    "protein": 5,
+    "calorie": 280,
+    "fibre": 3,
+    "fat": 10,
+    "unit": "g"
+  },
+  "Mangalorean Crab Curry": {
+    "carb": 35,
+    "protein": 3,
+    "calorie": 220,
+    "fibre": 2,
+    "fat": 10,
+    "unit": "g"
   }
+
 }

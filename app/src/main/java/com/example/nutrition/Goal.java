@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.Button;
 import android.widget.NumberPicker;
@@ -49,6 +52,12 @@ public class Goal extends AppCompatActivity {
         // calculating min max weight values
         int minWeightValue = (int)( 19.1 * Math.pow(height/100, 2));
         int maxWeightValue = (int)(27 * Math.pow(height/100, 2));
+
+
+
+
+
+
         bmiText.setText("your bmi is " + bmi + " Choosing a target weight in range " + minWeightValue + "-"+ maxWeightValue  +
         " is ideal.");
 
@@ -101,6 +110,12 @@ public class Goal extends AppCompatActivity {
         });
 
     }
+    public static Spannable getColoredString(String mString, int colorId) {
+        Spannable spannable = new SpannableString(mString);
+        spannable.setSpan(new ForegroundColorSpan(colorId), 0, spannable.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        return spannable;
+    }
+
 
 
 

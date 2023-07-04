@@ -71,18 +71,7 @@ public class AddWeightLog extends AppCompatActivity {
                 SharedPreferences.Editor myEdit = s.edit();
                 String weightLog = s.getString("log", "");
                 try {
-                    if(weightLog.contentEquals("")){
-                        JSONArray weightLogObj = new JSONArray();
-                        JSONObject jsObj = new JSONObject();
-                        jsObj.put("date",new SimpleDateFormat("dd MMM").format(new Date()));
-                        jsObj.put("weight", weightLogInput.getText().toString());
-                        weightLogObj.put(jsObj);
-                        myEdit.putString("log",weightLogObj.toString());
-                        myEdit.commit();
-                        shEdit.putFloat("weight", (float) Double.parseDouble(weightLogInput.getText().toString()));
-                        shEdit.commit();
 
-                    }else{
                         JSONArray weightLogObj = new JSONArray(weightLog);
                         JSONObject jsObj = new JSONObject();
                         jsObj.put("date",new SimpleDateFormat("dd MMM").format(new Date()));
@@ -93,13 +82,16 @@ public class AddWeightLog extends AppCompatActivity {
                             weightLogObj.put(jsObj);
 
                         if(index < 0 ||  index == weightLogObj.length() - 1){
+                            double bmi = Double.parseDouble(weightLogInput.getText().toString())
+                                    / Math.pow((sh.getFloat("height",0))/100, 2);
                             shEdit.putFloat("weight", (float) Double.parseDouble(weightLogInput.getText().toString()));
+
+                            shEdit.putString("bmi", String.format("%.2f", bmi));
                             shEdit.commit();
                         }
                         myEdit.putString("log",weightLogObj.toString());
                         myEdit.commit();
 
-                    }
                 } catch (JSONException e) {
                     throw new RuntimeException(e);
                 }

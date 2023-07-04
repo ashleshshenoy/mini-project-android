@@ -16,7 +16,12 @@ import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Onboarding extends AppCompatActivity{
 
@@ -107,16 +112,36 @@ public class Onboarding extends AppCompatActivity{
                     DecimalFormat df = new DecimalFormat("#.##");
                     SharedPreferences sharedPreferences = getSharedPreferences("UserDetails", MODE_PRIVATE);
                     SharedPreferences.Editor myEdit = sharedPreferences.edit();
+                    SharedPreferences weightLogSP  = getSharedPreferences("weightLog", MODE_PRIVATE);
+                    SharedPreferences.Editor weightLogSPEdit = weightLogSP.edit();
+
                     // write all the data entered by the user in SharedPreference and apply
                     myEdit.putString("username", username.getText().toString());
                     myEdit.putInt("age", Integer.parseInt(age.getText().toString()));
                     myEdit.putFloat("weight", (float) Double.parseDouble(weight.getText().toString()));
+
                     myEdit.putFloat("height", (float) Double.parseDouble(height.getText().toString()));
                     myEdit.putString("gender", genderSpinner.getSelectedItem().toString());
                     myEdit.putInt("maintainenceCalorie",dailyCaloireRequirement);
                     myEdit.putString("bmi", String.format("%.2f", bmi));
                     myEdit.apply();
-                    
+
+                    try {
+                        //first weight log
+                        JSONArray weightLogObj = new JSONArray();
+                        JSONObject jsObj = new JSONObject();
+                        jsObj.put("date",new SimpleDateFormat("dd MMM").format(new Date()));
+                        jsObj.put("weight", weight.getText().toString());
+                        weightLogObj.put(jsObj);
+                        Toast.makeText(Onboarding.this, "set weight log", Toast.LENGTH_SHORT).show();
+                        weightLogSPEdit.putString("log",weightLogObj.toString());
+                        weightLogSPEdit.commit();
+                    }
+                    catch (Exception e ){
+
+                    }
+
+
                     Intent i = new Intent(Onboarding.this, Goal.class);
                     i.putExtra("bmi", String.format("%.2f", bmi));
                     i.putExtra("height", height.getText().toString());
@@ -136,7 +161,6 @@ public class Onboarding extends AppCompatActivity{
     {
         public void onItemSelected(AdapterView<?> parent, View v, int position, long id)
         {
-            Toast.makeText(v.getContext(), "Your choose :" + gender[position],Toast.LENGTH_SHORT).show();
         }
 
         @Override
@@ -149,7 +173,6 @@ public class Onboarding extends AppCompatActivity{
     {
         public void onItemSelected(AdapterView<?> parent, View v, int position, long id)
         {
-            Toast.makeText(v.getContext(), "Your choose :" + activity[position],Toast.LENGTH_SHORT).show();
         }
 
         @Override

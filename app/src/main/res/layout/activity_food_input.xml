@@ -9,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/foodDetailContainer"
-        android:layout_width="394dp"
+        android:layout_width="match_parent"
         android:layout_height="245dp"
         android:background="@drawable/foodplaceholder"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,7 +74,7 @@
 
     <Button
         android:id="@+id/foodEntrySubmitButton"
-        android:layout_width="395dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:insetTop="0dp"
         android:insetBottom="0dp"
@@ -87,8 +87,8 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout
-        android:layout_width="391dp"
-        android:layout_height="108dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/foodEntrySubmitButton"
@@ -100,6 +100,7 @@
         <LinearLayout
             android:layout_width="95dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <ImageView
@@ -130,6 +131,7 @@
         <LinearLayout
             android:layout_width="95dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <ImageView
@@ -160,6 +162,7 @@
         <LinearLayout
             android:layout_width="95dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <ImageView
@@ -190,6 +193,7 @@
         <LinearLayout
             android:layout_width="95dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <ImageView
