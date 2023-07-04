@@ -1,5 +1,7 @@
 package com.example.nutrition;
 
+import static android.content.Context.MODE_PRIVATE;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -42,7 +44,7 @@ import java.util.List;
 
 public class barchartAnalysis extends Fragment  implements AdapterView.OnItemSelectedListener{
 
-    String[] macros = {"calorie","protein", "fat", "carb", "fibre"};
+    String[] macros = {"calorie","protein", "fat", "carb", "fibre", "water"};
 
     String date;
 
@@ -99,7 +101,11 @@ public class barchartAnalysis extends Fragment  implements AdapterView.OnItemSel
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
-        drawChart(getMacroEntries(macros[position]));
+        if(position == 5)
+            drawChart(getWaterLog());
+        else
+            drawChart(getMacroEntries(macros[position]));
+
     }
     @Override
     public void onNothingSelected(AdapterView<?> arg0) {
@@ -194,7 +200,7 @@ public class barchartAnalysis extends Fragment  implements AdapterView.OnItemSel
                 iStream.read(buffer);
                 String  json = new String(buffer, "UTF-8");
                 JSONObject foodDetail = new JSONObject(json);
-                SharedPreferences sp = getActivity().getSharedPreferences("FoodLog", Context.MODE_PRIVATE);
+                SharedPreferences sp = getActivity().getSharedPreferences("FoodLog", MODE_PRIVATE);
                 if(!sp.contains(day)) macroEntries.add(new BarEntry(6-i, 0)) ;
                 else{
                     JSONObject dayLog = new JSONObject(sp.getString(day, ""));
@@ -274,6 +280,35 @@ public class barchartAnalysis extends Fragment  implements AdapterView.OnItemSel
         weeklyAverageMarcos.setText(String.format("%.0f", weeklyTotalMacrosVolume/7));
 
         return  macroEntries ;
+    }
+
+    private ArrayList<BarEntry> getWaterLog() {
+
+        int watertotal=0;
+        ArrayList<BarEntry> waterEntries = new ArrayList<>();
+        SharedPreferences waterSp = getActivity().getSharedPreferences("WaterLog", MODE_PRIVATE);
+
+        SimpleDateFormat sd = new SimpleDateFormat("dd/MM/yyyy");
+        String day = date;
+        Date tempDay;
+        try {
+            for (int i = 0; i < 7; i++) {
+
+                waterEntries.add(  new BarEntry(6-i, waterSp.getInt(day, 0)));
+                watertotal += waterSp.getInt(day,0);
+                tempDay = sd.parse(day);
+                Calendar calendar = Calendar.getInstance();
+                calendar.setTime(tempDay);
+                calendar.add(Calendar.DATE, -1);
+                tempDay = calendar.getTime();
+                day = sd.format(tempDay);
+            }
+        }catch (Exception e){
+
+        }
+        weeklyTotalMacros.setText(""+ watertotal);
+        weeklyAverageMarcos.setText(String.format("%.1f",(double)watertotal/7.0));
+        return waterEntries;
     }
 
 

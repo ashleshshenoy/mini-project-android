@@ -139,41 +139,57 @@
                 app:srcCompat="@drawable/drink" />
 
             <TextView
-                android:id="@+id/totalDailyCalorieHolder"
+                android:id="@+id/waterStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1/12 cups"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="0 of 15  Cups"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.46"
+                app:layout_constraintHorizontal_bias="0.638"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.442" />
+                app:layout_constraintVertical_bias="0.426" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/waterDetailedStatus"
                 android:layout_width="143dp"
                 android:layout_height="17dp"
-                android:text="11 more cups to go !"
+                android:text="15 more cups to go !"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.613"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.639" />
+                app:layout_constraintVertical_bias="0.669" />
 
             <ImageView
-                android:id="@+id/analyticsBtn"
+                android:id="@+id/waterIncrementButton"
+                android:layout_width="23dp"
+                android:layout_height="20dp"
+                android:foregroundGravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.813"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.43"
+                app:srcCompat="@drawable/roundedplusicon" />
+
+            <ImageView
+                android:id="@+id/waterDecrementButton"
                 android:layout_width="23dp"
                 android:layout_height="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.945"
+                app:layout_constraintHorizontal_bias="0.388"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/plusicon" />
+                app:layout_constraintVertical_bias="0.43"
+                app:srcCompat="@drawable/minus_icon" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 

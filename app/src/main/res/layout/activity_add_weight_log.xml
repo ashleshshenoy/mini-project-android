@@ -41,7 +41,7 @@
             android:layout_weight="1"
             android:backgroundTint="#FFFFFF"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/floaticon" />
+            app:srcCompat="@drawable/minus_purple" />
 
         <EditText
             android:id="@+id/weightLogInput"
