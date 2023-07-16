@@ -50,7 +50,6 @@ public class TestingNew extends AppCompatActivity {
 
         timing = getIntent().getStringExtra("timing");
         date = getIntent().getStringExtra("date");
-        Toast.makeText(this, date + timing + "", Toast.LENGTH_SHORT).show();
 
         buildRecyclerView();
     }
@@ -104,7 +103,6 @@ public class TestingNew extends AppCompatActivity {
         }
         if (filteredlist.isEmpty()) {
             // if no item is added in filtered list we are
-            // displaying a toast message as no data found.
             Toast.makeText(this, "No Data Found..", Toast.LENGTH_SHORT).show();
         } else {
             // at last we are passing that filtered
@@ -135,7 +133,6 @@ public class TestingNew extends AppCompatActivity {
             }
 
         }catch (Exception e){
-            Toast.makeText(this, "" + e , Toast.LENGTH_SHORT).show();
         }
 
 

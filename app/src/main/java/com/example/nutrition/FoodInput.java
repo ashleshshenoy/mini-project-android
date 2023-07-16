@@ -13,7 +13,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.NumberPicker;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -163,7 +162,6 @@ public class FoodInput extends AppCompatActivity {
 
         }catch (Exception e){
             Log.d("error" ,e + "");
-            Toast.makeText(this, "" + e , Toast.LENGTH_LONG).show();
         }
     }
 
@@ -217,7 +215,6 @@ public class FoodInput extends AppCompatActivity {
             }
 
         } catch (Exception e) {
-        Toast.makeText(this, "" + e , Toast.LENGTH_SHORT).show();
         }
 
 

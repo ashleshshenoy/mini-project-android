@@ -8,7 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
-import android.widget.Toast;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
@@ -22,7 +21,6 @@ public class NotificationReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context, "activated ! ", Toast.LENGTH_SHORT).show();
         NotificationHelper notificationHelper = new NotificationHelper(context);
         notificationHelper.createNotification();
     }
@@ -55,10 +53,10 @@ public class NotificationReceiver extends BroadcastReceiver {
             }else if(time < 12){
                 notificationIdIndex = 1;
                 notificationDescription = " \uD83C\uDF6A Its time to grab a quick snack to keep your day going! Log your snack details now!";
-            }else if(time < 2 ){
+            }else if(time < 14 ){
                 notificationIdIndex = 2;
                 notificationDescription = "\uD83C\uDF71 Its time to have a delightful, healthy lunch. Log your lunch details now!";
-            }else if(time < 6){
+            }else if(time < 18){
                 notificationIdIndex =3;
                 notificationDescription = "\uD83E\uDD64 Grab a quick healthy evening snack. Log your snack details now!";
             }

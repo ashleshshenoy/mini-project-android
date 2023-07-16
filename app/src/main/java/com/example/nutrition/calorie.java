@@ -29,7 +29,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.material.appbar.AppBarLayout;
 import com.harrywhewell.scrolldatepicker.DayScrollDatePicker;
@@ -205,7 +204,6 @@ public class calorie extends AppCompatActivity {
         sd.getSelectedDate(new OnDateSelectedListener() {
             @Override
             public void onDateSelected(@Nullable Date date) {
-                Toast.makeText(calorie.this, "" + fdate.format(date), Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(calorie.this, calorie.class);
                 i.putExtra("date", fdate.format(date));
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

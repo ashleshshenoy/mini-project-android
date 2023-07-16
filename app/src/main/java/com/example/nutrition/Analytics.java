@@ -6,7 +6,7 @@ import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
+
 import android.graphics.Color;
 
 import com.github.mikephil.charting.charts.PieChart;
@@ -175,7 +175,6 @@ public  class Analytics extends AppCompatActivity {
     }
 
     public ColorStateList getProgressColor(int progress){
-        Toast.makeText(this, "" + progress, Toast.LENGTH_SHORT).show();
         if(progress > 120)
             return ColorStateList.valueOf(Color.rgb(255, 68, 51));
         else if(progress > 90)
@@ -289,7 +288,6 @@ public  class Analytics extends AppCompatActivity {
             }
 
         }catch (Exception e){
-            Toast.makeText(this  , "date loaded", Toast.LENGTH_SHORT).show();
 
         }
 

@@ -14,7 +14,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.NumberPicker;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Goal extends AppCompatActivity {
 
@@ -47,7 +46,6 @@ public class Goal extends AppCompatActivity {
         bmiText = (TextView)findViewById(R.id.bmiRecommendationText);
 
 
-        Toast.makeText(this, "" + weight + " " +  height , Toast.LENGTH_SHORT).show();
 
         // calculating min max weight values
         int minWeightValue = (int)( 19.1 * Math.pow(height/100, 2));

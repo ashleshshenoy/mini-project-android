@@ -17,7 +17,6 @@ import android.text.Layout;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -54,7 +53,6 @@ public class Home extends AppCompatActivity {
 
 
         String date = sdf.format(new Date());
-        Toast.makeText(this, "" + waterSp.getInt(date,17), Toast.LENGTH_SHORT).show();
         waterIntake = waterSp.getInt(date,0);
 
 

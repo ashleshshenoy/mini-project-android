@@ -44,7 +44,6 @@ public class search extends AppCompatActivity {
             public void onDateSelected(@Nullable Date date) {
                 SimpleDateFormat sd = new SimpleDateFormat("DD/MM/YYYY");
 
-                Toast.makeText(search.this, "" + sd.format(date), Toast.LENGTH_SHORT).show();
             }
         });
 
